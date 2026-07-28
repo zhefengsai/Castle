@@ -1,0 +1,369 @@
+{
+  "note": "Final mid-tier round: ChiLabel+ε, B2+, B3−, Static-η, scaling, false-freeze.",
+  "chi_label": {
+    "fail_meta": {
+      "cloud": "aws",
+      "region": "us-east-1",
+      "az": "1a",
+      "provider_rpc": "a",
+      "watcher_host": "w1"
+    },
+    "chi_cases": {
+      "same_az": 1,
+      "disjoint": 0,
+      "unknown_az": 1
+    }
+  },
+  "eps_sensitivity": {
+    "q": 0.4,
+    "eps": [
+      0.0,
+      0.1,
+      0.25
+    ],
+    "hop2_over_ell": [
+      {
+        "mean": 0.0,
+        "ci95": 0.0
+      },
+      {
+        "mean": 0.060000000000000005,
+        "ci95": 0.01783046598497581
+      },
+      {
+        "mean": 0.06666666666666667,
+        "ci95": 0.03431474778734083
+      }
+    ],
+    "bound_q_eps": [
+      0.0,
+      0.04000000000000001,
+      0.1
+    ],
+    "pass_1_2": [
+      true,
+      false,
+      false
+    ],
+    "pass_eps0_hop2_zero": true
+  },
+  "baselines_knife": {
+    "N": 20,
+    "loss": 3000000000000000000,
+    "L_ref_for_B3minus": 117.0,
+    "B1": {
+      "window_admits": 3,
+      "window_admit_frac": 0.6,
+      "U_over_ell": 1.0
+    },
+    "B2": {
+      "window_admits": 3,
+      "window_admit_frac": 0.6,
+      "U_over_ell": 1.0
+    },
+    "B2plus": {
+      "window_admits": 0,
+      "window_admit_frac": 0.0,
+      "U_over_ell": 0.0
+    },
+    "B3": {
+      "window_admits": 1,
+      "window_admit_frac": 0.2,
+      "U_over_ell": 0.3333333333333333
+    },
+    "B3minus": {
+      "window_admits": 3,
+      "window_admit_frac": 0.6,
+      "U_over_ell": 1.0
+    }
+  },
+  "b3_minus_ablation": {
+    "fast": {
+      "L": 43.0,
+      "B3": {
+        "window_admits": 1,
+        "window_admit_frac": 0.2,
+        "U_over_ell": 0.3333333333333333
+      },
+      "B3minus": {
+        "window_admits": 2,
+        "window_admit_frac": 0.4,
+        "U_over_ell": 0.6666666666666666
+      },
+      "mu_window_B3": 1000000000000000000,
+      "mu_window_B3minus": 2150000000000000000,
+      "coverage": [
+        {
+          "S": 60.0,
+          "L_lt_S": true,
+          "B3_claims_protectable": true,
+          "B3minus_claims_protectable": true,
+          "actually_froze_before_deadline": true,
+          "B3_false_claim": false,
+          "B3minus_false_claim": false
+        },
+        {
+          "S": 120.0,
+          "L_lt_S": true,
+          "B3_claims_protectable": true,
+          "B3minus_claims_protectable": true,
+          "actually_froze_before_deadline": true,
+          "B3_false_claim": false,
+          "B3minus_false_claim": false
+        },
+        {
+          "S": 300.0,
+          "L_lt_S": true,
+          "B3_claims_protectable": true,
+          "B3minus_claims_protectable": true,
+          "actually_froze_before_deadline": true,
+          "B3_false_claim": false,
+          "B3minus_false_claim": false
+        }
+      ],
+      "B3minus_false_claim_rate": 0.0,
+      "B3_false_claim_rate": 0.0
+    },
+    "mid": {
+      "L": 117.0,
+      "B3": {
+        "window_admits": 1,
+        "window_admit_frac": 0.2,
+        "U_over_ell": 0.3333333333333333
+      },
+      "B3minus": {
+        "window_admits": 3,
+        "window_admit_frac": 0.6,
+        "U_over_ell": 1.0
+      },
+      "mu_window_B3": 1000000000000000000,
+      "mu_window_B3minus": 3000000000000000000,
+      "coverage": [
+        {
+          "S": 60.0,
+          "L_lt_S": false,
+          "B3_claims_protectable": false,
+          "B3minus_claims_protectable": true,
+          "actually_froze_before_deadline": false,
+          "B3_false_claim": false,
+          "B3minus_false_claim": true
+        },
+        {
+          "S": 120.0,
+          "L_lt_S": true,
+          "B3_claims_protectable": true,
+          "B3minus_claims_protectable": true,
+          "actually_froze_before_deadline": true,
+          "B3_false_claim": false,
+          "B3minus_false_claim": false
+        },
+        {
+          "S": 300.0,
+          "L_lt_S": true,
+          "B3_claims_protectable": true,
+          "B3minus_claims_protectable": true,
+          "actually_froze_before_deadline": true,
+          "B3_false_claim": false,
+          "B3minus_false_claim": false
+        }
+      ],
+      "B3minus_false_claim_rate": 0.3333333333333333,
+      "B3_false_claim_rate": 0.0
+    },
+    "slow": {
+      "L": 176.0,
+      "B3": {
+        "window_admits": 1,
+        "window_admit_frac": 0.2,
+        "U_over_ell": 0.3333333333333333
+      },
+      "B3minus": {
+        "window_admits": 3,
+        "window_admit_frac": 0.6,
+        "U_over_ell": 1.0
+      },
+      "mu_window_B3": 1000000000000000000,
+      "mu_window_B3minus": 3000000000000000000,
+      "coverage": [
+        {
+          "S": 60.0,
+          "L_lt_S": false,
+          "B3_claims_protectable": false,
+          "B3minus_claims_protectable": true,
+          "actually_froze_before_deadline": false,
+          "B3_false_claim": false,
+          "B3minus_false_claim": true
+        },
+        {
+          "S": 120.0,
+          "L_lt_S": false,
+          "B3_claims_protectable": false,
+          "B3minus_claims_protectable": true,
+          "actually_froze_before_deadline": false,
+          "B3_false_claim": false,
+          "B3minus_false_claim": true
+        },
+        {
+          "S": 300.0,
+          "L_lt_S": true,
+          "B3_claims_protectable": true,
+          "B3minus_claims_protectable": true,
+          "actually_froze_before_deadline": true,
+          "B3_false_claim": false,
+          "B3minus_false_claim": false
+        }
+      ],
+      "B3minus_false_claim_rate": 0.6666666666666666,
+      "B3_false_claim_rate": 0.0
+    },
+    "admit_filter": {
+      "L_hat": 117.0,
+      "candidates": 200,
+      "admitted_B3": 145,
+      "admitted_B3minus": 200,
+      "late_set_admitted_B3": 0,
+      "late_set_admitted_B3minus": 55,
+      "late_set_frac_B3minus": 0.275
+    },
+    "verify": {
+      "slow_B3minus_leaks_more_than_B3": true,
+      "fast_B3_false_claim_zero": true,
+      "mid_B3minus_has_false_claims": true,
+      "admit_filter_blocks_late_only_on_B3": true
+    }
+  },
+  "static_eta": {
+    "pi_L_0.30": {
+      "eta": 1.5,
+      "x_hat_over_C_race": 1.5,
+      "x_static_over_C": 1.5,
+      "p_switch_static": 0.024,
+      "p_switch_race": 0.023166023166023165,
+      "race_tightens_earlier": true
+    },
+    "pi_L_0.70": {
+      "eta": 1.5,
+      "x_hat_over_C_race": 1.4774044032444962,
+      "x_static_over_C": 1.5,
+      "p_switch_static": 0.024,
+      "p_switch_race": 0.02214022140221402,
+      "race_tightens_earlier": true
+    }
+  },
+  "scaling": [
+    {
+      "N": 20,
+      "loss": 3000000000000000000,
+      "C0": 23000000000000000000,
+      "R0": 20000000000000000000,
+      "mu": 1000000000000000000,
+      "B1": {
+        "window_admits": 3,
+        "window_admit_frac": 0.6,
+        "U_over_ell": 1.0,
+        "U": 3000000000000000000
+      },
+      "B2": {
+        "window_admits": 3,
+        "window_admit_frac": 0.6,
+        "U_over_ell": 1.0,
+        "U": 3000000000000000000
+      },
+      "B3": {
+        "window_admits": 1,
+        "window_admit_frac": 0.2,
+        "U_over_ell": 0.3333333333333333,
+        "U": 1000000000000000000
+      }
+    },
+    {
+      "N": 50,
+      "loss": 3000000000000000000,
+      "C0": 53000000000000000000,
+      "R0": 50000000000000000000,
+      "mu": 1000000000000000000,
+      "B1": {
+        "window_admits": 3,
+        "window_admit_frac": 0.6,
+        "U_over_ell": 1.0,
+        "U": 3000000000000000000
+      },
+      "B2": {
+        "window_admits": 3,
+        "window_admit_frac": 0.6,
+        "U_over_ell": 1.0,
+        "U": 3000000000000000000
+      },
+      "B3": {
+        "window_admits": 1,
+        "window_admit_frac": 0.2,
+        "U_over_ell": 0.3333333333333333,
+        "U": 1000000000000000000
+      }
+    },
+    {
+      "N": 100,
+      "loss": 3000000000000000000,
+      "C0": 103000000000000000000,
+      "R0": 100000000000000000000,
+      "mu": 1000000000000000000,
+      "B1": {
+        "window_admits": 3,
+        "window_admit_frac": 0.6,
+        "U_over_ell": 1.0,
+        "U": 3000000000000000000
+      },
+      "B2": {
+        "window_admits": 3,
+        "window_admit_frac": 0.6,
+        "U_over_ell": 1.0,
+        "U": 3000000000000000000
+      },
+      "B3": {
+        "window_admits": 1,
+        "window_admit_frac": 0.2,
+        "U_over_ell": 0.3333333333333333,
+        "U": 1000000000000000000
+      }
+    }
+  ],
+  "false_freeze": [
+    {
+      "phi": 0.0,
+      "epochs": 500,
+      "false_events": 0,
+      "hard_freezes": 0,
+      "freeze_per_false_event": 0.0,
+      "blocked_admits_hard": 0,
+      "blocked_admits_soft": 0,
+      "opp_cost_hard_fee_units": 0.0,
+      "opp_cost_soft_fee_units": 0.0,
+      "opp_cost_ratio_soft_over_hard": 0.0
+    },
+    {
+      "phi": 0.01,
+      "epochs": 500,
+      "false_events": 2,
+      "hard_freezes": 2,
+      "freeze_per_false_event": 1.0,
+      "blocked_admits_hard": 6,
+      "blocked_admits_soft": 4,
+      "opp_cost_hard_fee_units": 0.07200000000000001,
+      "opp_cost_soft_fee_units": 0.048,
+      "opp_cost_ratio_soft_over_hard": 0.6666666666666666
+    },
+    {
+      "phi": 0.05,
+      "epochs": 500,
+      "false_events": 22,
+      "hard_freezes": 22,
+      "freeze_per_false_event": 1.0,
+      "blocked_admits_hard": 66,
+      "blocked_admits_soft": 44,
+      "opp_cost_hard_fee_units": 0.792,
+      "opp_cost_soft_fee_units": 0.528,
+      "opp_cost_ratio_soft_over_hard": 0.6666666666666666
+    }
+  ],
+  "verify_ok": true
+}

@@ -1,0 +1,671 @@
+{
+  "soft_quarantine_s": 26.05,
+  "hard_freeze_B_s": 16.05,
+  "hard_freeze_C_s": 49.2,
+  "window_leak_B2": 1.0,
+  "window_leak_B3_soft_on": 0.2,
+  "window_leak_B3_soft_off": 1.0,
+  "mode": "live",
+  "reps": 20,
+  "stats": {
+    "soft_quarantine_s": {
+      "mean": 26.05,
+      "ci95": 2.30807000714769,
+      "n": 20,
+      "std": 5.266327992663939,
+      "lo": 23.74192999285231,
+      "hi": 28.358070007147692
+    },
+    "hard_freeze_B_s": {
+      "mean": 16.05,
+      "ci95": 0.7034619654552087,
+      "n": 20,
+      "std": 1.6050905860647504,
+      "lo": 15.346538034544793,
+      "hi": 16.75346196545521
+    },
+    "hard_freeze_C_s": {
+      "mean": 49.2,
+      "ci95": 2.403025461459169,
+      "n": 20,
+      "std": 5.482988044372963,
+      "lo": 46.79697453854084,
+      "hi": 51.60302546145917
+    },
+    "window_leak_B2": {
+      "mean": 1.0,
+      "ci95": 0.0,
+      "n": 20,
+      "std": 0.0,
+      "lo": 1.0,
+      "hi": 1.0
+    },
+    "window_leak_B3_soft_on": {
+      "mean": 0.2,
+      "ci95": 0.0,
+      "n": 20,
+      "std": 0.0,
+      "lo": 0.2,
+      "hi": 0.2
+    },
+    "window_leak_B3_soft_off": {
+      "mean": 1.0,
+      "ci95": 0.0,
+      "n": 20,
+      "std": 0.0,
+      "lo": 1.0,
+      "hi": 1.0
+    }
+  },
+  "runs": [
+    {
+      "soft_quarantine_s": 24.0,
+      "hard_freeze_B_s": 15.0,
+      "hard_freeze_C_s": 45.0,
+      "window_leak_B2": 1.0,
+      "window_leak_B3_soft_on": 0.2,
+      "window_leak_B3_soft_off": 1.0,
+      "admitted_on": 1,
+      "admitted_off": 5,
+      "attempts": 5,
+      "pass_soft_on_le_cap": true,
+      "pass_ablation_ge_2x": true,
+      "detail_on": [
+        "2ef6a86e7b6c0bf4b39cd5db26b084f294ab8025980474bf4b5360945f5c0edd",
+        "REJECT:('execution reverted: rate limited', 'REDACTED_TX_HASH00000020000000000000000000000000000000000000000000000000000000000000000c72617465206c696d697465640000000000000000000000000000000000000000')"
+      ],
+      "detail_off": [
+        "62d9d73a17543e281e358e983900bb6ad735426030ac10a6eda85d5601b17d7f",
+        "63f2e0ca411a408ddefb142ce68a9122b4fde51416a70a48008def3577105e2a",
+        "b809ee5524ad6ecc92419dba9a685b1a466a168d7cb61888c5370e11f92ed3e7",
+        "440391bb47e4cb6bec47c8c0eb77fc12c247d6eddb85b408016748fb39b5eb36",
+        "dfd9393e9b1abb239959c7d3ddca667d7c922d577ccb8929e6920325db1221b2"
+      ],
+      "addresses": {
+        "bsc_B3": "REDACTED_TESTNET_ADDRESS",
+        "base_B3": "REDACTED_TESTNET_ADDRESS",
+        "vault": "REDACTED_TESTNET_ADDRESS"
+      },
+      "rep": 0
+    },
+    {
+      "soft_quarantine_s": 35.0,
+      "hard_freeze_B_s": 18.0,
+      "hard_freeze_C_s": 57.0,
+      "window_leak_B2": 1.0,
+      "window_leak_B3_soft_on": 0.2,
+      "window_leak_B3_soft_off": 1.0,
+      "admitted_on": 1,
+      "admitted_off": 5,
+      "attempts": 5,
+      "pass_soft_on_le_cap": true,
+      "pass_ablation_ge_2x": true,
+      "detail_on": [
+        "a9b54581a4fc4470ebe1b2dcfbe5ed31b3f84b627f8e35882ce2c7a5a4dbd7e9",
+        "REJECT:('execution reverted: rate limited', 'REDACTED_TX_HASH00000020000000000000000000000000000000000000000000000000000000000000000c72617465206c696d697465640000000000000000000000000000000000000000')"
+      ],
+      "detail_off": [
+        "e8967ab8d64a204c8aec40197f4aaee3acc71ef204c4d8f8b854cfe22aa6c21b",
+        "e081ea3642ef867f971deb18c76ea5d2a36064b1bdfdba666209cabcf3349304",
+        "1328e55ff8ace3250bba622174596ca829fb71fda2b24cbdfe3b1a7f4b327bb0",
+        "7772ec0f392ab3f433e3c6fe20a6461655ff856725cf7911245460b4af98b4e2",
+        "828e63c9b79f15b8f7701cbd8285f5a05c63986928cfd2a7a554a3426a2a85f3"
+      ],
+      "addresses": {
+        "bsc_B3": "REDACTED_TESTNET_ADDRESS",
+        "base_B3": "REDACTED_TESTNET_ADDRESS",
+        "vault": "REDACTED_TESTNET_ADDRESS"
+      },
+      "rep": 1
+    },
+    {
+      "soft_quarantine_s": 24.0,
+      "hard_freeze_B_s": 17.0,
+      "hard_freeze_C_s": 46.0,
+      "window_leak_B2": 1.0,
+      "window_leak_B3_soft_on": 0.2,
+      "window_leak_B3_soft_off": 1.0,
+      "admitted_on": 1,
+      "admitted_off": 5,
+      "attempts": 5,
+      "pass_soft_on_le_cap": true,
+      "pass_ablation_ge_2x": true,
+      "detail_on": [
+        "f19b57b1fbedc63dd337f270346dd538566ece4925a783237a83b2928d91b962",
+        "REJECT:('execution reverted: rate limited', 'REDACTED_TX_HASH00000020000000000000000000000000000000000000000000000000000000000000000c72617465206c696d697465640000000000000000000000000000000000000000')"
+      ],
+      "detail_off": [
+        "bdfac63e3e6001e714c179bc86e9f8efec22102032e8efbe747a5ebc21b2c951",
+        "7197c2977c44805fb18a839c728e8182aeaf8ae2f5a32228cb70464013a53af8",
+        "fbe799c2158571ae4179996523e1aa38aa7dfbfecf02dc8b82f77ae4c9741d1f",
+        "92f574029dff0af414575b5733c5b8af1447350fbddce30e319251925ee32558",
+        "15a939df57b38f5ddc05188ee740436677539fa9a5bb8e8c827f74d3d20985f2"
+      ],
+      "addresses": {
+        "bsc_B3": "REDACTED_TESTNET_ADDRESS",
+        "base_B3": "REDACTED_TESTNET_ADDRESS",
+        "vault": "REDACTED_TESTNET_ADDRESS"
+      },
+      "rep": 2
+    },
+    {
+      "soft_quarantine_s": 22.0,
+      "hard_freeze_B_s": 13.0,
+      "hard_freeze_C_s": 43.0,
+      "window_leak_B2": 1.0,
+      "window_leak_B3_soft_on": 0.2,
+      "window_leak_B3_soft_off": 1.0,
+      "admitted_on": 1,
+      "admitted_off": 5,
+      "attempts": 5,
+      "pass_soft_on_le_cap": true,
+      "pass_ablation_ge_2x": true,
+      "detail_on": [
+        "d58f430ad4c1e8c902870a9bfd374d2e593682802c29a488f82994424fe85ff8",
+        "REJECT:('execution reverted: rate limited', 'REDACTED_TX_HASH00000020000000000000000000000000000000000000000000000000000000000000000c72617465206c696d697465640000000000000000000000000000000000000000')"
+      ],
+      "detail_off": [
+        "7856ddc38677363379a3ef34ee684089e2ebc47ebccbda9b1ebfd43afa7240bf",
+        "9d177f08859b1b9a8e9dbb308f368b697f194c1b6009e478fdc8dae67a645ea4",
+        "7726e2ea3ca96a948279d292364bea62ed75a0e624fac23789a9f242202aab8a",
+        "81539986fbbf872218c51f70e7450c5f3e099654041b7cac1574b06c04711e35",
+        "3adb730b8b9d8b47f3f151ec72121ec22b2a0cffcc940cfbf4f61ad6c35fa918"
+      ],
+      "addresses": {
+        "bsc_B3": "REDACTED_TESTNET_ADDRESS",
+        "base_B3": "REDACTED_TESTNET_ADDRESS",
+        "vault": "REDACTED_TESTNET_ADDRESS"
+      },
+      "rep": 3
+    },
+    {
+      "soft_quarantine_s": 24.0,
+      "hard_freeze_B_s": 16.0,
+      "hard_freeze_C_s": 45.0,
+      "window_leak_B2": 1.0,
+      "window_leak_B3_soft_on": 0.2,
+      "window_leak_B3_soft_off": 1.0,
+      "admitted_on": 1,
+      "admitted_off": 5,
+      "attempts": 5,
+      "pass_soft_on_le_cap": true,
+      "pass_ablation_ge_2x": true,
+      "detail_on": [
+        "aa6c4750eddf8f2fa334f22ea3df5aefdaa7fb2702213f7e9749f00f9efdda7c",
+        "REJECT:('execution reverted: rate limited', 'REDACTED_TX_HASH00000020000000000000000000000000000000000000000000000000000000000000000c72617465206c696d697465640000000000000000000000000000000000000000')"
+      ],
+      "detail_off": [
+        "401e26b3bdd76019096579075d70f1fae339ecb04efa9eda5a16f9765abba809",
+        "c840f3c3c6abf38e5fcb4783f18987be91646793861be4413fae6879f4f658ac",
+        "361b90a931a57911378c0b9ed344c4496b7abdd4753a34d120564b841db2f0b0",
+        "f054c1205c2540df8c2123a5b011282821068d457656d2ee65b8ee8ce7a43191",
+        "0a6986643cf9b9062214032c74b1077a4d9b301d1f82c029327b0593913f365c"
+      ],
+      "addresses": {
+        "bsc_B3": "REDACTED_TESTNET_ADDRESS",
+        "base_B3": "REDACTED_TESTNET_ADDRESS",
+        "vault": "REDACTED_TESTNET_ADDRESS"
+      },
+      "rep": 4
+    },
+    {
+      "soft_quarantine_s": 24.0,
+      "hard_freeze_B_s": 16.0,
+      "hard_freeze_C_s": 47.0,
+      "window_leak_B2": 1.0,
+      "window_leak_B3_soft_on": 0.2,
+      "window_leak_B3_soft_off": 1.0,
+      "admitted_on": 1,
+      "admitted_off": 5,
+      "attempts": 5,
+      "pass_soft_on_le_cap": true,
+      "pass_ablation_ge_2x": true,
+      "detail_on": [
+        "787ea1e34542b2f2c5337dc0d16a8b670cb895d8c5f39dcc55af3b185db21e24",
+        "REJECT:('execution reverted: rate limited', 'REDACTED_TX_HASH00000020000000000000000000000000000000000000000000000000000000000000000c72617465206c696d697465640000000000000000000000000000000000000000')"
+      ],
+      "detail_off": [
+        "34fb223bcc9d525659dfe44ccca6af636dbc14379fe85a331126a7bced70d09d",
+        "b5625135d52ae30f2633c0b2ce8a5400847601458bcd7fb18ff86dd34cd913e9",
+        "babff26374ed2b0d7435d4cf1ba259157864f4e9f3e6b7dd030baeced37f28ac",
+        "0a05ae24d6190d75800d67a941ddd6bf612be5b7d90f2a35565d2c12853148e8",
+        "0b2d35b2380c9cecdf3fa1a5d74fd16e1bb1eed5d0da3aa2a039f9911b63b0bd"
+      ],
+      "addresses": {
+        "bsc_B3": "REDACTED_TESTNET_ADDRESS",
+        "base_B3": "REDACTED_TESTNET_ADDRESS",
+        "vault": "REDACTED_TESTNET_ADDRESS"
+      },
+      "rep": 5
+    },
+    {
+      "soft_quarantine_s": 21.0,
+      "hard_freeze_B_s": 14.0,
+      "hard_freeze_C_s": 43.0,
+      "window_leak_B2": 1.0,
+      "window_leak_B3_soft_on": 0.2,
+      "window_leak_B3_soft_off": 1.0,
+      "admitted_on": 1,
+      "admitted_off": 5,
+      "attempts": 5,
+      "pass_soft_on_le_cap": true,
+      "pass_ablation_ge_2x": true,
+      "detail_on": [
+        "86de7a38d7f0fa51b8a58c1bd7f490f45e7fe5d5bbc15171826930cfe33c0bb9",
+        "REJECT:('execution reverted: rate limited', 'REDACTED_TX_HASH00000020000000000000000000000000000000000000000000000000000000000000000c72617465206c696d697465640000000000000000000000000000000000000000')"
+      ],
+      "detail_off": [
+        "4f6463aa2a1fe00c8c375584cbecf56f7a1c1fcbd7b9d4bac2f728091893cc31",
+        "bd6b4b9e422a8a3891993d5d907204cad983850d398ad754b01f370b843b4c3a",
+        "d1136e30551641f057ec09011e76829009fc10974945f4fae6fd8c8d5241407e",
+        "cbe5b2215cdfdbd7856ae55fca623dee1350a2a7dd2d5aaf1036b7ae9e911405",
+        "5a5a18b0e809ee7c9a779bb72bb0c22bd905c67d39f0c41a06c603e8cb488e43"
+      ],
+      "addresses": {
+        "bsc_B3": "REDACTED_TESTNET_ADDRESS",
+        "base_B3": "REDACTED_TESTNET_ADDRESS",
+        "vault": "REDACTED_TESTNET_ADDRESS"
+      },
+      "rep": 6
+    },
+    {
+      "soft_quarantine_s": 25.0,
+      "hard_freeze_B_s": 16.0,
+      "hard_freeze_C_s": 46.0,
+      "window_leak_B2": 1.0,
+      "window_leak_B3_soft_on": 0.2,
+      "window_leak_B3_soft_off": 1.0,
+      "admitted_on": 1,
+      "admitted_off": 5,
+      "attempts": 5,
+      "pass_soft_on_le_cap": true,
+      "pass_ablation_ge_2x": true,
+      "detail_on": [
+        "3b20899a5c216bf8498cca810ab6068595fb7689ca18741054226ec8f2c5d054",
+        "REJECT:('execution reverted: rate limited', 'REDACTED_TX_HASH00000020000000000000000000000000000000000000000000000000000000000000000c72617465206c696d697465640000000000000000000000000000000000000000')"
+      ],
+      "detail_off": [
+        "8399121e1f120539a5c4204060dda7a66ea190d61980104f5d0b1acd01b36ebb",
+        "df887276211510cb6755361f4ba59fdf0b4a5fb30c1a706d8721796130a4fc63",
+        "aafb72a885d721321427af730e9a55eb9f7faed851587e1b7d968bad7954d73d",
+        "b20f03a3a42b4f44a8e1c02e7ef122837eb501628a352da7d5f979779353c7ee",
+        "20f6e49398170d983bd866c40e0032aa596d2224c4df0040f744cd4f16514341"
+      ],
+      "addresses": {
+        "bsc_B3": "REDACTED_TESTNET_ADDRESS",
+        "base_B3": "REDACTED_TESTNET_ADDRESS",
+        "vault": "REDACTED_TESTNET_ADDRESS"
+      },
+      "rep": 7
+    },
+    {
+      "soft_quarantine_s": 38.0,
+      "hard_freeze_B_s": 20.0,
+      "hard_freeze_C_s": 58.0,
+      "window_leak_B2": 1.0,
+      "window_leak_B3_soft_on": 0.2,
+      "window_leak_B3_soft_off": 1.0,
+      "admitted_on": 1,
+      "admitted_off": 5,
+      "attempts": 5,
+      "pass_soft_on_le_cap": true,
+      "pass_ablation_ge_2x": true,
+      "detail_on": [
+        "e0d819fb69c7bd7fe8e940f636c02702d2b270e0430b53a4ba1927872f8ee030",
+        "REJECT:('execution reverted: rate limited', 'REDACTED_TX_HASH00000020000000000000000000000000000000000000000000000000000000000000000c72617465206c696d697465640000000000000000000000000000000000000000')"
+      ],
+      "detail_off": [
+        "e66d46a7c3f77f2bf7077dbfcdd3792aaf41981d0323d1ca6429df44e3918328",
+        "19d661af2a49fa35dc6177b4a4acc53aca4c9a65d012772b540a957e63066043",
+        "ec94b487c45a5faf9bea7cbee7b48c5a585b29c569d8c2b57e92cd67ed117fd2",
+        "b90883804130d22bd00001b90f3f40ac028d9ded4801f7c439024491a5c2d90b",
+        "c410a2de9fc2d830ae655af22dad67bdc278ab61a32e67d22d275cefa0213062"
+      ],
+      "addresses": {
+        "bsc_B3": "REDACTED_TESTNET_ADDRESS",
+        "base_B3": "REDACTED_TESTNET_ADDRESS",
+        "vault": "REDACTED_TESTNET_ADDRESS"
+      },
+      "rep": 8
+    },
+    {
+      "soft_quarantine_s": 21.0,
+      "hard_freeze_B_s": 13.0,
+      "hard_freeze_C_s": 55.0,
+      "window_leak_B2": 1.0,
+      "window_leak_B3_soft_on": 0.2,
+      "window_leak_B3_soft_off": 1.0,
+      "admitted_on": 1,
+      "admitted_off": 5,
+      "attempts": 5,
+      "pass_soft_on_le_cap": true,
+      "pass_ablation_ge_2x": true,
+      "detail_on": [
+        "45a0f4af304eedfb698b673b6af9d601f01cb069a9772433bd109f9c97b6b741",
+        "REJECT:('execution reverted: rate limited', 'REDACTED_TX_HASH00000020000000000000000000000000000000000000000000000000000000000000000c72617465206c696d697465640000000000000000000000000000000000000000')"
+      ],
+      "detail_off": [
+        "8899c77983051235238d238f55343135ccdc30d0b9164bf41973584708273fc7",
+        "6badf076508457832996b7a44355203b966e9c226357d917c853bc65effba083",
+        "73d052620c56b92135213caf29b92a859155634f2f9d8268b19bd1db720c85bf",
+        "fda0d92a4327fc7a55a5ff22947965e24449df48ec03af7635a91b9647b5c1d9",
+        "b3752d6904adc308823df972bbfd5a7d4bd7090a9ec467d032ec093518f918a6"
+      ],
+      "addresses": {
+        "bsc_B3": "REDACTED_TESTNET_ADDRESS",
+        "base_B3": "REDACTED_TESTNET_ADDRESS",
+        "vault": "REDACTED_TESTNET_ADDRESS"
+      },
+      "rep": 9
+    },
+    {
+      "soft_quarantine_s": 24.0,
+      "hard_freeze_B_s": 17.0,
+      "hard_freeze_C_s": 46.0,
+      "window_leak_B2": 1.0,
+      "window_leak_B3_soft_on": 0.2,
+      "window_leak_B3_soft_off": 1.0,
+      "admitted_on": 1,
+      "admitted_off": 5,
+      "attempts": 5,
+      "pass_soft_on_le_cap": true,
+      "pass_ablation_ge_2x": true,
+      "detail_on": [
+        "51aaf0dbe79b6d9eea8836c222fe310f5ecefaa9f1808bd0c50ca6dbd02cdda8",
+        "REJECT:('execution reverted: rate limited', 'REDACTED_TX_HASH00000020000000000000000000000000000000000000000000000000000000000000000c72617465206c696d697465640000000000000000000000000000000000000000')"
+      ],
+      "detail_off": [
+        "01eeee1d3b38075c4a96b6b0b340b51a8014816d5438c0eefbce95ee3f05e0e1",
+        "ca3496800d06b1102249d702130cb370b6da7f22ff95eb6dd6bcac97812c251f",
+        "372a6ba2e699bf1ccd81552392e154557ed1b4ee5a5069aceeb6f4d4d1cf15ef",
+        "9c564a986d203ebeb0148070a343daaff83dbb5faca96d1f58907e700f5fd6e4",
+        "c7760893f1ba6399792a398844cb24122c4b789beb910478bfaebefb41c2cf09"
+      ],
+      "addresses": {
+        "bsc_B3": "REDACTED_TESTNET_ADDRESS",
+        "base_B3": "REDACTED_TESTNET_ADDRESS",
+        "vault": "REDACTED_TESTNET_ADDRESS"
+      },
+      "rep": 10
+    },
+    {
+      "soft_quarantine_s": 25.0,
+      "hard_freeze_B_s": 17.0,
+      "hard_freeze_C_s": 48.0,
+      "window_leak_B2": 1.0,
+      "window_leak_B3_soft_on": 0.2,
+      "window_leak_B3_soft_off": 1.0,
+      "admitted_on": 1,
+      "admitted_off": 5,
+      "attempts": 5,
+      "pass_soft_on_le_cap": true,
+      "pass_ablation_ge_2x": true,
+      "detail_on": [
+        "2828591d27d5e4be18af8a4fb65cd522295d4c9ec6a08eb0a650c930c05e1d70",
+        "REJECT:('execution reverted: rate limited', 'REDACTED_TX_HASH00000020000000000000000000000000000000000000000000000000000000000000000c72617465206c696d697465640000000000000000000000000000000000000000')"
+      ],
+      "detail_off": [
+        "e859edc5aac768c380191f2edfed32f3b2f623ea5be6790b8e49ca6fa228c225",
+        "be25ec8056bfdd0dbf88d3493600a5fa467ac61b699c486c4f8876d7d9db2b83",
+        "a7725be8c798de41ccb60f1c509b462cd5e8c67430d12feac1511ff4a8b66d6b",
+        "ce8a5d824aad35df98ad0378b4671dd426e48edd109d4bab036745ded6640bf8",
+        "9ccd64d73db09bff8c98d3ec2221dbe05a0e10fe38b6b6902257570d4ab01b67"
+      ],
+      "addresses": {
+        "bsc_B3": "REDACTED_TESTNET_ADDRESS",
+        "base_B3": "REDACTED_TESTNET_ADDRESS",
+        "vault": "REDACTED_TESTNET_ADDRESS"
+      },
+      "rep": 11
+    },
+    {
+      "soft_quarantine_s": 23.0,
+      "hard_freeze_B_s": 16.0,
+      "hard_freeze_C_s": 45.0,
+      "window_leak_B2": 1.0,
+      "window_leak_B3_soft_on": 0.2,
+      "window_leak_B3_soft_off": 1.0,
+      "admitted_on": 1,
+      "admitted_off": 5,
+      "attempts": 5,
+      "pass_soft_on_le_cap": true,
+      "pass_ablation_ge_2x": true,
+      "detail_on": [
+        "7dbab61fc12f53ef1c38c40e74a2a0864c530db9f6961c924e36d8ecffe9c013",
+        "REJECT:('execution reverted: rate limited', 'REDACTED_TX_HASH00000020000000000000000000000000000000000000000000000000000000000000000c72617465206c696d697465640000000000000000000000000000000000000000')"
+      ],
+      "detail_off": [
+        "e31be6937e67bb8cec0f3a02b8ec46c0157f132c92e8457e785537dc9f9691b0",
+        "3eea58abe01ce440b3f605e87d20a45f42207cacca8b362ccf02fce97f0e5e6d",
+        "09b8a6be578824d81ad8037becd7dee6726c8d63b408ae96676b3c34826b3f1e",
+        "1595c05d6bf8bcdf5f4e15ef6912dc9dffaea10cc550bfb9fd769da22ebfb083",
+        "117ccc01d8eb8523692b3b58eaaa515f997fed6b72ef2357d8588a3aa68d20b4"
+      ],
+      "addresses": {
+        "bsc_B3": "REDACTED_TESTNET_ADDRESS",
+        "base_B3": "REDACTED_TESTNET_ADDRESS",
+        "vault": "REDACTED_TESTNET_ADDRESS"
+      },
+      "rep": 12
+    },
+    {
+      "soft_quarantine_s": 24.0,
+      "hard_freeze_B_s": 17.0,
+      "hard_freeze_C_s": 46.0,
+      "window_leak_B2": 1.0,
+      "window_leak_B3_soft_on": 0.2,
+      "window_leak_B3_soft_off": 1.0,
+      "admitted_on": 1,
+      "admitted_off": 5,
+      "attempts": 5,
+      "pass_soft_on_le_cap": true,
+      "pass_ablation_ge_2x": true,
+      "detail_on": [
+        "26b90529cf78847db1aecccd1e98733e85f93037ffb6c904cc11d8d0ee0f150e",
+        "REJECT:('execution reverted: rate limited', 'REDACTED_TX_HASH00000020000000000000000000000000000000000000000000000000000000000000000c72617465206c696d697465640000000000000000000000000000000000000000')"
+      ],
+      "detail_off": [
+        "c39caa71ee75fe393e1c9e8ae528cc520a2f9e764cb39e6cebf3f9f76cd35f58",
+        "2aa30a67e925226bf6982bb0df09e78cbacc060eacfa003b98cb550502cd6d14",
+        "bb56e1a16bd338fe2d303f2bcfeec713aa2f4046a66215a11359b84d0a9c5ad9",
+        "6f4badd6b080399bb78660d30322a1863f6b9cae6239aea471e770dd2d75f01a",
+        "f56f0a6c4113af9a2608686248ef2286a11019d7542b96f98d1b28a07ad461f7"
+      ],
+      "addresses": {
+        "bsc_B3": "REDACTED_TESTNET_ADDRESS",
+        "base_B3": "REDACTED_TESTNET_ADDRESS",
+        "vault": "REDACTED_TESTNET_ADDRESS"
+      },
+      "rep": 13
+    },
+    {
+      "soft_quarantine_s": 25.0,
+      "hard_freeze_B_s": 17.0,
+      "hard_freeze_C_s": 58.0,
+      "window_leak_B2": 1.0,
+      "window_leak_B3_soft_on": 0.2,
+      "window_leak_B3_soft_off": 1.0,
+      "admitted_on": 1,
+      "admitted_off": 5,
+      "attempts": 5,
+      "pass_soft_on_le_cap": true,
+      "pass_ablation_ge_2x": true,
+      "detail_on": [
+        "d49167a4dde02f0fc113fa94cdcfdb468a6acd8058dea25d64083f2d9f24cf58",
+        "REJECT:('execution reverted: rate limited', 'REDACTED_TX_HASH00000020000000000000000000000000000000000000000000000000000000000000000c72617465206c696d697465640000000000000000000000000000000000000000')"
+      ],
+      "detail_off": [
+        "d86cf09e90d43ce1e53471076b77dac8f85b66a595c9bcde7c0c84cf5e8188d7",
+        "7957295efc4db2a7e63030d244b6f0951b1a14b31a3f165a2cb94f6a8abd4940",
+        "bd2e3169e2db469888cbd1bf1882e7886cfc925f5652996e858929d497920a61",
+        "c19aa51d5b274433140a8536d0faaf4eb624a4111e4564d5f69dee51dc457561",
+        "b2209af1b327894909fcd055f46d03f99233f4332b9075ef61ece5f081c78969"
+      ],
+      "addresses": {
+        "bsc_B3": "REDACTED_TESTNET_ADDRESS",
+        "base_B3": "REDACTED_TESTNET_ADDRESS",
+        "vault": "REDACTED_TESTNET_ADDRESS"
+      },
+      "rep": 14
+    },
+    {
+      "soft_quarantine_s": 23.0,
+      "hard_freeze_B_s": 16.0,
+      "hard_freeze_C_s": 47.0,
+      "window_leak_B2": 1.0,
+      "window_leak_B3_soft_on": 0.2,
+      "window_leak_B3_soft_off": 1.0,
+      "admitted_on": 1,
+      "admitted_off": 5,
+      "attempts": 5,
+      "pass_soft_on_le_cap": true,
+      "pass_ablation_ge_2x": true,
+      "detail_on": [
+        "ee5c46dab237b92029acf65cb3fbe0ae4c57a61661d20b3c2bcca9c8cafb70f2",
+        "REJECT:('execution reverted: rate limited', 'REDACTED_TX_HASH00000020000000000000000000000000000000000000000000000000000000000000000c72617465206c696d697465640000000000000000000000000000000000000000')"
+      ],
+      "detail_off": [
+        "e94b84ae31402e60842ca2eeff4e14474c19ac7e4530bf6620ba70cb22923bc4",
+        "a7242c093d2516dc1b8f1f122d42160307067c40a3fadd3851cd1a05dec52509",
+        "11ecd8391ee7fb9ab2e7c52d7ab8bc1721754e28b58b022b8616a4fc3619d6d5",
+        "fb741557a02a7ca6cfbe7b6da8a88dea1ccc83c41feca0ca17abad65565114fd",
+        "7a135f56382c9d1d3d9d5c269b043bffecc8f16f93f1f30baec0738d3f970cea"
+      ],
+      "addresses": {
+        "bsc_B3": "REDACTED_TESTNET_ADDRESS",
+        "base_B3": "REDACTED_TESTNET_ADDRESS",
+        "vault": "REDACTED_TESTNET_ADDRESS"
+      },
+      "rep": 15
+    },
+    {
+      "soft_quarantine_s": 35.0,
+      "hard_freeze_B_s": 15.0,
+      "hard_freeze_C_s": 57.0,
+      "window_leak_B2": 1.0,
+      "window_leak_B3_soft_on": 0.2,
+      "window_leak_B3_soft_off": 1.0,
+      "admitted_on": 1,
+      "admitted_off": 5,
+      "attempts": 5,
+      "pass_soft_on_le_cap": true,
+      "pass_ablation_ge_2x": true,
+      "detail_on": [
+        "a0ee1d38f6f372b27bf2371fd129028f7ac9579155b61e5d7d69289fa748e6d9",
+        "REJECT:('execution reverted: rate limited', 'REDACTED_TX_HASH00000020000000000000000000000000000000000000000000000000000000000000000c72617465206c696d697465640000000000000000000000000000000000000000')"
+      ],
+      "detail_off": [
+        "1d6c39d6759ad9395e8e3bbb72ee2fadce2d51e40ded1fec5bfe804896ad8059",
+        "404366e18df74703e4b54ce851bf640b15a5d7e41f1e0e3a70e45c5e92527d36",
+        "3cd2efc775f0739e1a51ce391fec8413d026ca769109a5ab44400ccf46adecb9",
+        "b7b29a5c9d0abb5486be46dc4dc6da68dda28a76808f36694695468ca4c1c566",
+        "fd183d1920333cd411b5ee2fcf6c1866cacdf4cd2532075de126d4d2fc53acb7"
+      ],
+      "addresses": {
+        "bsc_B3": "REDACTED_TESTNET_ADDRESS",
+        "base_B3": "REDACTED_TESTNET_ADDRESS",
+        "vault": "REDACTED_TESTNET_ADDRESS"
+      },
+      "rep": 16
+    },
+    {
+      "soft_quarantine_s": 25.0,
+      "hard_freeze_B_s": 16.0,
+      "hard_freeze_C_s": 50.0,
+      "window_leak_B2": 1.0,
+      "window_leak_B3_soft_on": 0.2,
+      "window_leak_B3_soft_off": 1.0,
+      "admitted_on": 1,
+      "admitted_off": 5,
+      "attempts": 5,
+      "pass_soft_on_le_cap": true,
+      "pass_ablation_ge_2x": true,
+      "detail_on": [
+        "58ac5ddd5e4b3c841e91a3fd277278e5f8bc42b6a1c266e1f9c0fce3cd13d98a",
+        "REJECT:('execution reverted: rate limited', 'REDACTED_TX_HASH00000020000000000000000000000000000000000000000000000000000000000000000c72617465206c696d697465640000000000000000000000000000000000000000')"
+      ],
+      "detail_off": [
+        "4326b014846a3149f040c22fa050ffca1ac97fe15cee8e8e1de1b859e1e8e430",
+        "81937379650b7ab435085ac2f4cedc6f4edee388f7d7114d4708f2aee39ddd0a",
+        "5660b8b34185514774c455a7cc2242149425214c8611c7e62e3e2b9d94068f1b",
+        "cceede40034a7550bff18eea75a834ef011fee504a54da708e5acb0b18ea4d48",
+        "ad4881f6549022aed04a1f745efc124e60c0f15df721b45fc91e83538b6b4bf6"
+      ],
+      "addresses": {
+        "bsc_B3": "REDACTED_TESTNET_ADDRESS",
+        "base_B3": "REDACTED_TESTNET_ADDRESS",
+        "vault": "REDACTED_TESTNET_ADDRESS"
+      },
+      "rep": 17
+    },
+    {
+      "soft_quarantine_s": 36.0,
+      "hard_freeze_B_s": 16.0,
+      "hard_freeze_C_s": 57.0,
+      "window_leak_B2": 1.0,
+      "window_leak_B3_soft_on": 0.2,
+      "window_leak_B3_soft_off": 1.0,
+      "admitted_on": 1,
+      "admitted_off": 5,
+      "attempts": 5,
+      "pass_soft_on_le_cap": true,
+      "pass_ablation_ge_2x": true,
+      "detail_on": [
+        "16d3477adb30649e1a33d5f1efafaf44987219b9f8315f59ef225f7ae1cb324f",
+        "REJECT:('execution reverted: rate limited', 'REDACTED_TX_HASH00000020000000000000000000000000000000000000000000000000000000000000000c72617465206c696d697465640000000000000000000000000000000000000000')"
+      ],
+      "detail_off": [
+        "d45c40a015b9dcddcb21c01b845dabba6a271bce1e1b1a8aa0a1e57ff6fdf962",
+        "2ea5342021e6472238e5bbbcc52a749cefabbd14ea2bdc64fb47289876550d49",
+        "3cdeae3663ffbbb71e658c1a70fccb8339c2573aed254c5fc0fef0625f1a999c",
+        "69efedd4606891c42700fe7f7e64adda724888f188f6d85e042b9e738dff5d42",
+        "abbc180601b793adadf5229b8ff359efa65845592d5d37cb6ea433fc67e19e9e"
+      ],
+      "addresses": {
+        "bsc_B3": "REDACTED_TESTNET_ADDRESS",
+        "base_B3": "REDACTED_TESTNET_ADDRESS",
+        "vault": "REDACTED_TESTNET_ADDRESS"
+      },
+      "rep": 18
+    },
+    {
+      "soft_quarantine_s": 23.0,
+      "hard_freeze_B_s": 16.0,
+      "hard_freeze_C_s": 45.0,
+      "window_leak_B2": 1.0,
+      "window_leak_B3_soft_on": 0.2,
+      "window_leak_B3_soft_off": 1.0,
+      "admitted_on": 1,
+      "admitted_off": 5,
+      "attempts": 5,
+      "pass_soft_on_le_cap": true,
+      "pass_ablation_ge_2x": true,
+      "detail_on": [
+        "9488c4d3c5e74588e9c6355a8ae5090c88d58872c32fe8a6cfbb8f3813088a9f",
+        "REJECT:('execution reverted: rate limited', 'REDACTED_TX_HASH00000020000000000000000000000000000000000000000000000000000000000000000c72617465206c696d697465640000000000000000000000000000000000000000')"
+      ],
+      "detail_off": [
+        "e92759514f2e44f8050b75b2b377d1d2e39386dcb65181c3962bfa34ee6b339a",
+        "fadf7a52509e63458f77387acb8d211e2c2674f73f47909a666460afd99a0de1",
+        "f7048fed3cbc06bfbcb40ec56a896bc6dd91ffc9f1f1202045022ad744b190db",
+        "403d912e9b85c2288a9c04aeecc8a8c9671ec5da473614316c08e97e88173295",
+        "218961f56d232bb5e5fd4cf3c822dc432ed5774acdf8a03c9217d81bd582ab01"
+      ],
+      "addresses": {
+        "bsc_B3": "REDACTED_TESTNET_ADDRESS",
+        "base_B3": "REDACTED_TESTNET_ADDRESS",
+        "vault": "REDACTED_TESTNET_ADDRESS"
+      },
+      "rep": 19
+    }
+  ],
+  "mu_units": 1000000000000000000,
+  "mu_delta_t_cap": 0.4,
+  "pass_soft_on_le_cap": true,
+  "pass_ablation_ge_2x": true,
+  "addresses": {
+    "bsc_B3": "REDACTED_TESTNET_ADDRESS",
+    "base_B3": "REDACTED_TESTNET_ADDRESS",
+    "vault": "REDACTED_TESTNET_ADDRESS"
+  }
+}

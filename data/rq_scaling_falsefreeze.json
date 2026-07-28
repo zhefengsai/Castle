@@ -1,0 +1,119 @@
+{
+  "note": "Local vault-faithful probes; not live testnet.",
+  "mu_window": 1000000000000000000,
+  "scaling": [
+    {
+      "N": 20,
+      "loss": 3000000000000000000,
+      "C0": 23000000000000000000,
+      "R0": 20000000000000000000,
+      "mu": 1000000000000000000,
+      "B1": {
+        "window_admits": 3,
+        "window_admit_frac": 0.6,
+        "U_over_ell": 1.0,
+        "U": 3000000000000000000
+      },
+      "B2": {
+        "window_admits": 3,
+        "window_admit_frac": 0.6,
+        "U_over_ell": 1.0,
+        "U": 3000000000000000000
+      },
+      "B3": {
+        "window_admits": 1,
+        "window_admit_frac": 0.2,
+        "U_over_ell": 0.3333333333333333,
+        "U": 1000000000000000000
+      }
+    },
+    {
+      "N": 50,
+      "loss": 3000000000000000000,
+      "C0": 53000000000000000000,
+      "R0": 50000000000000000000,
+      "mu": 1000000000000000000,
+      "B1": {
+        "window_admits": 3,
+        "window_admit_frac": 0.6,
+        "U_over_ell": 1.0,
+        "U": 3000000000000000000
+      },
+      "B2": {
+        "window_admits": 3,
+        "window_admit_frac": 0.6,
+        "U_over_ell": 1.0,
+        "U": 3000000000000000000
+      },
+      "B3": {
+        "window_admits": 1,
+        "window_admit_frac": 0.2,
+        "U_over_ell": 0.3333333333333333,
+        "U": 1000000000000000000
+      }
+    },
+    {
+      "N": 100,
+      "loss": 3000000000000000000,
+      "C0": 103000000000000000000,
+      "R0": 100000000000000000000,
+      "mu": 1000000000000000000,
+      "B1": {
+        "window_admits": 3,
+        "window_admit_frac": 0.6,
+        "U_over_ell": 1.0,
+        "U": 3000000000000000000
+      },
+      "B2": {
+        "window_admits": 3,
+        "window_admit_frac": 0.6,
+        "U_over_ell": 1.0,
+        "U": 3000000000000000000
+      },
+      "B3": {
+        "window_admits": 1,
+        "window_admit_frac": 0.2,
+        "U_over_ell": 0.3333333333333333,
+        "U": 1000000000000000000
+      }
+    }
+  ],
+  "false_freeze": [
+    {
+      "phi": 0.0,
+      "epochs": 500,
+      "false_events": 0,
+      "hard_freezes": 0,
+      "freeze_per_false_event": 0.0,
+      "blocked_admits_hard": 0,
+      "blocked_admits_soft": 0,
+      "opp_cost_hard_fee_units": 0.0,
+      "opp_cost_soft_fee_units": 0.0,
+      "opp_cost_ratio_soft_over_hard": 0.0
+    },
+    {
+      "phi": 0.01,
+      "epochs": 500,
+      "false_events": 2,
+      "hard_freezes": 2,
+      "freeze_per_false_event": 1.0,
+      "blocked_admits_hard": 6,
+      "blocked_admits_soft": 4,
+      "opp_cost_hard_fee_units": 0.07200000000000001,
+      "opp_cost_soft_fee_units": 0.048,
+      "opp_cost_ratio_soft_over_hard": 0.6666666666666666
+    },
+    {
+      "phi": 0.05,
+      "epochs": 500,
+      "false_events": 22,
+      "hard_freezes": 22,
+      "freeze_per_false_event": 1.0,
+      "blocked_admits_hard": 66,
+      "blocked_admits_soft": 44,
+      "opp_cost_hard_fee_units": 0.792,
+      "opp_cost_soft_fee_units": 0.528,
+      "opp_cost_ratio_soft_over_hard": 0.6666666666666666
+    }
+  ]
+}

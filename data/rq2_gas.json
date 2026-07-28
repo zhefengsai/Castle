@@ -1,0 +1,86 @@
+{
+  "mode": "live",
+  "reps": 5,
+  "B2_localPause": {
+    "mean": 49504.6,
+    "ci95": 4.704,
+    "n": 5,
+    "std": 5.366563145999495,
+    "lo": 49499.896,
+    "hi": 49509.304
+  },
+  "B3_submitAttestation": {
+    "mean": 126198.8,
+    "ci95": 9.408,
+    "n": 5,
+    "std": 10.73312629199899,
+    "lo": 126189.392,
+    "hi": 126208.208
+  },
+  "runs": {
+    "B2": [
+      {
+        "mode": "B2",
+        "gas_used": 49507,
+        "tx": "5b2dc8e82aef9ce2409811103bf904413ddbfd33b4bfeb07f861867b89cd490a",
+        "rep": 0
+      },
+      {
+        "mode": "B2",
+        "gas_used": 49507,
+        "tx": "dc17e82ce20c999483855386816aa3435afc3beb83cfbb57d549984e4dd727d1",
+        "rep": 1
+      },
+      {
+        "mode": "B2",
+        "gas_used": 49507,
+        "tx": "ca33fb78a747669c5d4c1a697b1d71a2c125ed8aa27200f0db3543a5f8ae7e32",
+        "rep": 2
+      },
+      {
+        "mode": "B2",
+        "gas_used": 49507,
+        "tx": "8797725fff743522c1fef0c78595c25199784459663e1850f38863854fc9e3bd",
+        "rep": 3
+      },
+      {
+        "mode": "B2",
+        "gas_used": 49495,
+        "tx": "b50f4687afa3a2812b7bee7f65b6fabace01d60b646cccacd76d9290372d2965",
+        "rep": 4
+      }
+    ],
+    "B3": [
+      {
+        "mode": "B3",
+        "gas_used": 126206,
+        "tx": "5c5f4263550064d7627f467b513e1d95f2c4e1653ea9388942c8f429f1699165",
+        "rep": 0
+      },
+      {
+        "mode": "B3",
+        "gas_used": 126182,
+        "tx": "f728cb8d5169fed74b84394e8b762ac9c3286ec56b55752579ff8c6b814404db",
+        "rep": 1
+      },
+      {
+        "mode": "B3",
+        "gas_used": 126194,
+        "tx": "753c3ac7ce8d0c5e20006805ca38d5b66cd1c272e252609f8443656f95aee305",
+        "rep": 2
+      },
+      {
+        "mode": "B3",
+        "gas_used": 126206,
+        "tx": "1a2f46bea67f7cd374c78e4ac65c7a4ec2a7361dd26ea50a29e6b2b9835f8a33",
+        "rep": 3
+      },
+      {
+        "mode": "B3",
+        "gas_used": 126206,
+        "tx": "75ba3db75d85f1ba844fd4615724995d638ddeb34043d09d77c49c787cb6d8b1",
+        "rep": 4
+      }
+    ]
+  }
+}
