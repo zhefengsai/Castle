@@ -1,0 +1,846 @@
+{
+  "rows": [
+    {
+      "profile": "shallow",
+      "L": 24.251460442186787,
+      "S": 59.6036854101261,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "shallow",
+      "L": 24.20980023430608,
+      "S": 58.39299188051667,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "shallow",
+      "L": 26.608000090260276,
+      "S": 62.84124288938773,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "shallow",
+      "L": 21.469157057907896,
+      "S": 58.13017661238794,
+      "preemptable": true,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "shallow",
+      "L": 19.34993845072233,
+      "S": 59.343625008202366,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "shallow",
+      "L": 22.5354652905931,
+      "S": 58.36722305142807,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "shallow",
+      "L": 24.823261072748267,
+      "S": 63.127540108328034,
+      "preemptable": true,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "shallow",
+      "L": 26.73292694109937,
+      "S": 58.00441597954016,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "shallow",
+      "L": 25.806940363303617,
+      "S": 60.28203689328262,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "shallow",
+      "L": 22.156549247483163,
+      "S": 58.62682252299798,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "shallow",
+      "L": 21.980763632922528,
+      "S": 119.37247327538486,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "shallow",
+      "L": 25.081691169371616,
+      "S": 120.64397736751903,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "shallow",
+      "L": 22.692342781163322,
+      "S": 119.61115909892169,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "shallow",
+      "L": 26.986862290441522,
+      "S": 116.22280340368764,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "shallow",
+      "L": 26.69175084756461,
+      "S": 122.34393420210128,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "shallow",
+      "L": 23.372154370927145,
+      "S": 124.37406205061087,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "shallow",
+      "L": 27.60326973973225,
+      "S": 123.94531129420311,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "shallow",
+      "L": 21.583362735435657,
+      "S": 119.98663760063975,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "shallow",
+      "L": 21.42327707250089,
+      "S": 121.18536618054603,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "shallow",
+      "L": 25.392085447925737,
+      "S": 116.44764609972843,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "shallow",
+      "L": 23.127129505713558,
+      "S": 296.4905942766814,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "shallow",
+      "L": 23.008178543115697,
+      "S": 300.9869088883806,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "shallow",
+      "L": 27.166945757604246,
+      "S": 303.9610829612455,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "shallow",
+      "L": 19.592980238706698,
+      "S": 300.15608692277965,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "shallow",
+      "L": 26.007923151684338,
+      "S": 298.1462788658772,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "shallow",
+      "L": 25.147485549721036,
+      "S": 305.466034089985,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "shallow",
+      "L": 22.676943956369563,
+      "S": 302.8051499643421,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "shallow",
+      "L": 28.00478516729051,
+      "S": 300.5655575775374,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "shallow",
+      "L": 23.244872989534382,
+      "S": 296.72656164714243,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "shallow",
+      "L": 25.260822981536464,
+      "S": 301.74349743723843,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "prob",
+      "L": 88.49078841748013,
+      "S": 65.06732235733102,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "prob",
+      "L": 89.42522458438266,
+      "S": 64.72322483653376,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "prob",
+      "L": 89.13442830563481,
+      "S": 57.79355012297317,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "prob",
+      "L": 90.49957074311733,
+      "S": 63.09435925460842,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "prob",
+      "L": 90.32201915343069,
+      "S": 58.24341352762999,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "prob",
+      "L": 87.31756057184666,
+      "S": 55.795439355247716,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "prob",
+      "L": 91.00536569974973,
+      "S": 62.969139099857415,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "prob",
+      "L": 89.67141081474942,
+      "S": 56.776905425314695,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "prob",
+      "L": 91.74608430524341,
+      "S": 56.15881816585628,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "prob",
+      "L": 88.57386380988146,
+      "S": 61.863053560620294,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "prob",
+      "L": 85.49971765285082,
+      "S": 121.15910879269892,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "prob",
+      "L": 90.21855939495563,
+      "S": 119.77289542133754,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "prob",
+      "L": 91.38834387341402,
+      "S": 117.72489074730477,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "prob",
+      "L": 91.45218757789553,
+      "S": 122.5311979869098,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "prob",
+      "L": 91.57517644341173,
+      "S": 122.53223604173577,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "prob",
+      "L": 87.14645229802053,
+      "S": 119.59486469988896,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "prob",
+      "L": 87.15451646296917,
+      "S": 120.77535837273896,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "prob",
+      "L": 87.94039112397708,
+      "S": 116.8709967597853,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "prob",
+      "L": 90.71734389834069,
+      "S": 123.9673724093005,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "prob",
+      "L": 92.08367951842564,
+      "S": 124.20679448031757,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "prob",
+      "L": 85.26939218744604,
+      "S": 303.6860511576103,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "prob",
+      "L": 90.8475427057067,
+      "S": 301.11368225320876,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "prob",
+      "L": 90.63882844050477,
+      "S": 298.92326007438413,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "prob",
+      "L": 89.78217054418515,
+      "S": 297.588804454438,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "prob",
+      "L": 89.42246698800925,
+      "S": 300.250426068321,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "prob",
+      "L": 88.97875506420375,
+      "S": 299.96540081494027,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "prob",
+      "L": 90.60137022858922,
+      "S": 299.68178323965674,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "prob",
+      "L": 85.20353426920445,
+      "S": 301.5391564016409,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "prob",
+      "L": 88.93998317356369,
+      "S": 299.2915361104412,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "prob",
+      "L": 89.90039806188071,
+      "S": 300.25985778896563,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "deep",
+      "L": 133.2946781327122,
+      "S": 62.75246395033288,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "deep",
+      "L": 132.13386973401035,
+      "S": 60.14301819363504,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "deep",
+      "L": 131.8333095776492,
+      "S": 61.11284050528323,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "deep",
+      "L": 131.226378155718,
+      "S": 59.54342112477513,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "deep",
+      "L": 127.05222410391607,
+      "S": 63.08656304340955,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "deep",
+      "L": 126.13008072678059,
+      "S": 59.28018998622589,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "deep",
+      "L": 129.59095502320068,
+      "S": 56.87141957704649,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "deep",
+      "L": 131.22624627267317,
+      "S": 59.3990108957713,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "deep",
+      "L": 129.12626334880542,
+      "S": 61.559525192932924,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "deep",
+      "L": 129.04684191888316,
+      "S": 64.16693992451492,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "deep",
+      "L": 130.7029101523746,
+      "S": 118.57700103949668,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "deep",
+      "L": 126.1114700480289,
+      "S": 116.07674040929656,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "deep",
+      "L": 132.17366156953673,
+      "S": 119.84818781066598,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "deep",
+      "L": 129.43374986864094,
+      "S": 124.92975484272809,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "deep",
+      "L": 127.4347015118522,
+      "S": 118.24302660047593,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "deep",
+      "L": 129.05482464648304,
+      "S": 121.7590118445939,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "deep",
+      "L": 128.6729296033919,
+      "S": 118.15974645415791,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "deep",
+      "L": 126.78970120622978,
+      "S": 122.18804821205357,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "deep",
+      "L": 131.61227871703005,
+      "S": 118.57086975779652,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "deep",
+      "L": 130.3266798910826,
+      "S": 116.12206163172198,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "deep",
+      "L": 129.0563736905182,
+      "S": 304.1338528581676,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "deep",
+      "L": 134.6207269735918,
+      "S": 297.63842177352853,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "deep",
+      "L": 129.6089883443338,
+      "S": 301.6974535404843,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "deep",
+      "L": 128.87760377918167,
+      "S": 297.3971497070349,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "deep",
+      "L": 129.84530988055155,
+      "S": 293.95001792930026,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "deep",
+      "L": 131.356079454248,
+      "S": 298.49997470044576,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "deep",
+      "L": 132.00479654568792,
+      "S": 299.5429840925273,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "deep",
+      "L": 127.99039798594461,
+      "S": 297.90010037306,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "deep",
+      "L": 132.40879258306617,
+      "S": 304.7721023613782,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "deep",
+      "L": 127.63663404862707,
+      "S": 294.69446442873925,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "reorg",
+      "L": 196.78732639743342,
+      "S": 56.57316313010424,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "reorg",
+      "L": 205.59383079960105,
+      "S": 58.9629824116066,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "reorg",
+      "L": 204.7091684697068,
+      "S": 58.53309280847387,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "reorg",
+      "L": 206.52133459398624,
+      "S": 60.59765394904157,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "reorg",
+      "L": 202.23599541571303,
+      "S": 67.65727207611324,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "reorg",
+      "L": 202.35105628742912,
+      "S": 56.33632995082159,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "reorg",
+      "L": 203.40382000392023,
+      "S": 59.88349488432576,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "reorg",
+      "L": 205.1326491063325,
+      "S": 57.235098226506565,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "reorg",
+      "L": 204.609433862959,
+      "S": 62.55824541172287,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "reorg",
+      "L": 201.66462541612987,
+      "S": 60.48973201716803,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "reorg",
+      "L": 201.33849608629131,
+      "S": 127.037424221522,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "reorg",
+      "L": 201.59172087543968,
+      "S": 118.64077666899385,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "reorg",
+      "L": 200.86832395607325,
+      "S": 118.96163617448047,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "reorg",
+      "L": 202.98824794660618,
+      "S": 122.30336740603406,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "reorg",
+      "L": 201.7790267078686,
+      "S": 119.44267812398525,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "reorg",
+      "L": 200.16702126717192,
+      "S": 117.51779331970154,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "reorg",
+      "L": 208.5116151165519,
+      "S": 123.12372957508438,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "reorg",
+      "L": 201.43715191664538,
+      "S": 115.98780827541512,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "reorg",
+      "L": 201.04883433880067,
+      "S": 119.9349274214588,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "reorg",
+      "L": 203.06945557671838,
+      "S": 117.76691819720743,
+      "preemptable": false,
+      "froze_before_deadline": false
+    },
+    {
+      "profile": "reorg",
+      "L": 200.4268510665247,
+      "S": 304.26713551574534,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "reorg",
+      "L": 202.25086396086414,
+      "S": 299.33801637655176,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "reorg",
+      "L": 197.12790910796576,
+      "S": 300.3469854812779,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "reorg",
+      "L": 200.99463140193436,
+      "S": 298.0792127838289,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "reorg",
+      "L": 200.65893838318465,
+      "S": 295.69715562097764,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "reorg",
+      "L": 204.5087378092791,
+      "S": 297.1231988766173,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "reorg",
+      "L": 202.4167351391705,
+      "S": 300.9038765296607,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "reorg",
+      "L": 204.66578889872167,
+      "S": 303.6097768623495,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "reorg",
+      "L": 204.11667992339028,
+      "S": 288.6831745316318,
+      "preemptable": true,
+      "froze_before_deadline": true
+    },
+    {
+      "profile": "reorg",
+      "L": 202.94910936661492,
+      "S": 299.558863479461,
+      "preemptable": true,
+      "froze_before_deadline": true
+    }
+  ],
+  "pass_frac_among_L_lt_S": 0.9714285714285714,
+  "criterion": 0.95
+}

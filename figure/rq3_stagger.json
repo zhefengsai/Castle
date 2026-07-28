@@ -1,0 +1,11 @@
+{
+  "soft_quarantine_s": 40,
+  "hard_freeze_B_s": 90,
+  "hard_freeze_C_s": 130,
+  "window_leak_B2": 0.42,
+  "window_leak_B3_soft_on": 0.12,
+  "window_leak_B3_soft_off": 0.31,
+  "mu_delta_t_cap": 0.15,
+  "pass_soft_on_le_cap": true,
+  "pass_ablation_ge_2x": true
+}

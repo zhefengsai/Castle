@@ -1,0 +1,22 @@
+{
+  "B1": {
+    "success_rate": 0.3569116838412957,
+    "median_unfreeze_s": 248.21618143501158,
+    "induced_exposure_norm": 1.0
+  },
+  "B2": {
+    "success_rate": 0.7266087415236677,
+    "median_unfreeze_s": 84.57474214716511,
+    "induced_exposure_norm": 0.5771606760001936
+  },
+  "B3": {
+    "success_rate": 0.9366956185854602,
+    "median_unfreeze_s": 39.315233823198575,
+    "induced_exposure_norm": 0.2916223620839271
+  },
+  "criteria": {
+    "B3_success_ge": 0.9,
+    "unfreeze_vs_B1_le": 0.2,
+    "exposure_reduce_vs_B1_ge": 0.5
+  }
+}

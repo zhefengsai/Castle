@@ -1,0 +1,25 @@
+{
+  "note": "Eight separate panels; LaTeX 2x4 layout in castle.tex.",
+  "panels": [
+    "fig_eval_a_rq1_L_vs_S",
+    "fig_eval_b_rq1_coverage",
+    "fig_eval_c_rq2_success_exposure",
+    "fig_eval_d_rq2_unfreeze_cdf",
+    "fig_eval_e_rq3_stagger_timeline",
+    "fig_eval_f_rq3_softq_ablation",
+    "fig_eval_g_rq4_nonamplification",
+    "fig_eval_h_rq4_concurrency"
+  ],
+  "profiles": {
+    "fast-final": 24,
+    "probabilistic": 90,
+    "congested": 130,
+    "reorg-safe": 203
+  },
+  "coverage": {
+    "fast-final": 1.0,
+    "probabilistic": 0.7,
+    "congested": 0.3,
+    "reorg-safe": 0.3
+  }
+}

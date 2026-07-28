@@ -1,0 +1,11 @@
+{
+  "bsc": {
+    "B1": "0xYOUR_BSC_B1_ADDRESS",
+    "B2": "0xYOUR_BSC_B2_ADDRESS",
+    "B3": "0xYOUR_BSC_B3_ADDRESS"
+  },
+  "base": {
+    "B3": "0xYOUR_BASE_B3_ADDRESS"
+  }
+}
+
