@@ -1,8 +1,7 @@
 # CASTLE Artifact
 
 This repository contains the contracts, experiment drivers, data, and plotting
-scripts for **CASTLE: Latency-Conditioned Fault Containment for Cloud-Hosted
-Shared-Collateral Cross-Chain Solvers**.
+scripts for **CASTLE: Latency-Aware Containment of Cloud Failures in Shared-Collateral Cross-Chain Solvers**.
 
 CASTLE studies a shared-collateral solver whose destination liquidity is spent
 before source settlement completes. The artifact evaluates whether reliable
