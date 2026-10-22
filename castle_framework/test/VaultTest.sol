@@ -43,4 +43,54 @@ contract VaultTest is Test {
         vm.expectRevert(bytes("chi!=0"));
         vault.rerouteOpen(iid, lp2);
     }
+
+    function _admitForReroute() internal returns (bytes32 iid) {
+        iid = keccak256("reroute-check");
+        vm.prank(address(hub));
+        vault.admitIntent(iid, lp, address(0xBEEF), uint64(block.timestamp + 120), 10 ether, 1);
+    }
+
+    function testRerouteRejectsUnknownRecipientAz() public {
+        bytes32 iid = _admitForReroute();
+        vault.setAzId(lp2, 0);
+        vm.prank(address(hub));
+        vm.expectRevert(bytes("unknown az"));
+        vault.rerouteOpen(iid, lp2);
+        assertEq(vault.reserved(lp), 10 ether);
+        assertEq(vault.reserved(lp2), 0);
+    }
+
+    function testRerouteRejectsUnknownOriginAz() public {
+        bytes32 iid = _admitForReroute();
+        vault.setAzId(lp, 0);
+        vm.prank(address(hub));
+        vm.expectRevert(bytes("unknown az"));
+        vault.rerouteOpen(iid, lp2);
+        assertEq(vault.reserved(lp), 10 ether);
+        assertEq(vault.reserved(lp2), 0);
+    }
+
+    function testRerouteAcceptsDistinctKnownAz() public {
+        bytes32 iid = _admitForReroute();
+        vm.prank(address(hub));
+        vault.rerouteOpen(iid, lp2);
+        assertEq(vault.reserved(lp), 0);
+        assertEq(vault.reserved(lp2), 10 ether);
+        CastleTypes.Intent memory it = hubIntent(iid);
+        assertEq(it.lpId, lp2);
+        assertEq(uint256(it.status), uint256(CastleTypes.IntentStatus.Rerouted));
+    }
+
+    function testRerouteRejectsInsolventRecipient() public {
+        bytes32 iid = _admitForReroute();
+        vault.setCollateral(lp2, 9 ether);
+        vm.prank(address(hub));
+        vm.expectRevert(bytes("toLp free C"));
+        vault.rerouteOpen(iid, lp2);
+    }
+
+    function hubIntent(bytes32 iid) internal view returns (CastleTypes.Intent memory it) {
+        (it.intentId, it.lpId, it.user, it.admitAt, it.deadline, it.notional,
+            it.destDomain, it.status) = vault.intents(iid);
+    }
 }

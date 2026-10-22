@@ -18,10 +18,16 @@ from data_io import write_data
 from stats_util import mean_ci95
 
 NOTIONAL = 10**18
+PRICING_PARAMETERS = {
+    "C": 1_000_000.0, "r": 0.012, "ell": 0.25,
+    "gamma": 0.004, "kappa": 0.01, "eta": 1.0,
+}
 
 
 def race_coupled(p: float, pi_L: float) -> dict:
-    C, r, ell, gamma, kappa, eta = 1_000_000.0, 0.012, 0.25, 0.004, 0.01, 1.5
+    C, r, ell, gamma, kappa, eta = (
+        PRICING_PARAMETERS[key] for key in ("C", "r", "ell", "gamma", "kappa", "eta")
+    )
     denom = gamma + 2.0 * p * kappa * pi_L
     x = (C / denom) * max(r - p * ell, 0.0)
     x_hat = min(eta * C, x)
@@ -57,15 +63,15 @@ class VaultSim:
         U = max(0, self.R[lp] - self.C[lp])
         return U
 
-    def reroute(self, iid: bytes, to_lp: bytes, enforce_chi: bool = True) -> None:
+    def reroute(self, iid: bytes, to_lp: bytes) -> None:
         it = self.intents[iid]
         assert it["status"] == "Open"
         from_lp = it["lp"]
-        if enforce_chi:
-            # Match Solidity: reject same non-zero az.
-            az_to, az_from = self.az.get(to_lp, 0), self.az.get(from_lp, 0)
-            if az_to != 0 and az_to == az_from:
-                raise RuntimeError("chi!=0")
+        az_to, az_from = self.az.get(to_lp, 0), self.az.get(from_lp, 0)
+        if az_to == 0 or az_from == 0:
+            raise RuntimeError("unknown az")
+        if az_to == az_from:
+            raise RuntimeError("chi!=0")
         assert self.free(to_lp) >= it["notional"]
         self.R[from_lp] -= it["notional"]
         self.R[to_lp] = self.R.get(to_lp, 0) + it["notional"]
@@ -107,10 +113,13 @@ def sim_one_shock(alpha: float, q: float = 0.4, seed: int = 0) -> dict:
     rerouted_corr = 0
     for i, iid in enumerate(iids):
         if i < n_leak:
-            v.reroute(iid, lp_corr, enforce_chi=False)  # α mislabel
+            # Ground truth remains correlated; the reported label is wrong but known.
+            v.az[lp_corr] = 3
+            v.reroute(iid, lp_corr)
+            v.az[lp_corr] = 1
             rerouted_corr += w
         else:
-            v.reroute(iid, lp_safe, enforce_chi=True)
+            v.reroute(iid, lp_safe)
 
     hop2 = 0
     if n_leak > 0 and rng.random() < q:
@@ -188,6 +197,7 @@ def run_sim(reps: int = 30, seed: int = 0) -> dict:
             "pass_hop2_mean_le_1_2_bound": all(pass_hop2),
             "U0_over_ell_at_alpha0": mean_ci95(x["U0"] / x["ell"] for x in by_alpha[0.0]),
         },
+        "pricing_parameters": dict(PRICING_PARAMETERS),
         "pricing": {
             "pi_L_0.30": race_coupled(0.0225, 0.30),
             "pi_L_0.70": race_coupled(0.0225, 0.70),
@@ -256,9 +266,8 @@ def live_one_alpha(w3, vault, acc, alpha: float, q: float, rep: int) -> dict:
         # intent 0 may be Failed after slash — skip non-open
         try:
             if (i / n_intents) < alpha:
-                # mislabel: set corr az to 0 temporarily? Contract blocks same az.
-                # For alpha path on-chain: set corr az=0 to allow, modeling mislabel.
-                send(w3, vault.functions.setAzId(lp_corr, 0))
+                # Report a distinct known label for a truly correlated recipient.
+                send(w3, vault.functions.setAzId(lp_corr, 3))
                 send(w3, vault.functions.rerouteOpen(iid, lp_corr))
                 send(w3, vault.functions.setAzId(lp_corr, 1))
             else:
@@ -336,6 +345,7 @@ def run_live(reps: int = 3) -> dict:
             ),
             "pass_hop2_le_bound": all(all(x["hop2_le_bound"] for x in by_alpha[a]) for a in alphas),
         },
+        "pricing_parameters": dict(PRICING_PARAMETERS),
         "pricing": base["pricing"],
         "pass_alpha0_hop2_zero": all(x["hop2"] == 0 for x in by_alpha[0.0]),
         "pass_psum_decreases": base["pass_psum_decreases"],
@@ -412,6 +422,7 @@ def run_anvil() -> dict:
                 hop2_meas[i] <= 1.2 * hop2_bound[i] + 1e-9 for i in range(len(alphas))
             ),
         },
+        "pricing_parameters": dict(PRICING_PARAMETERS),
         "pricing": pricing,
         "pass_alpha0_hop2_zero": hop2_meas[0] == 0.0,
         "pass_psum_decreases": pricing["pi_L_0.70"]["p_switch"] < pricing["pi_L_0.30"]["p_switch"],

@@ -1,5 +1,5 @@
 {
-  "note": "Final mid-tier round: ChiLabel+ε, B2+, B3−, Static-η, scaling, false-freeze.",
+  "note": "Final mid-tier round: ChiLabel+\u03b5, B2+, B3\u2212, Static-\u03b7, scaling, false-freeze.",
   "chi_label": {
     "fail_meta": {
       "cloud": "aws",
@@ -234,19 +234,19 @@
   },
   "static_eta": {
     "pi_L_0.30": {
-      "eta": 1.5,
-      "x_hat_over_C_race": 1.5,
-      "x_static_over_C": 1.5,
-      "p_switch_static": 0.024,
-      "p_switch_race": 0.023166023166023165,
+      "eta": 1.0,
+      "x_hat_over_C_race": 1.0,
+      "x_static_over_C": 1.0,
+      "p_switch_static": 0.032,
+      "p_switch_race": 0.03125,
       "race_tightens_earlier": true
     },
     "pi_L_0.70": {
-      "eta": 1.5,
-      "x_hat_over_C_race": 1.4774044032444962,
-      "x_static_over_C": 1.5,
-      "p_switch_static": 0.024,
-      "p_switch_race": 0.02214022140221402,
+      "eta": 1.0,
+      "x_hat_over_C_race": 1.0,
+      "x_static_over_C": 1.0,
+      "p_switch_static": 0.032,
+      "p_switch_race": 0.030303030303030304,
       "race_tightens_earlier": true
     }
   },

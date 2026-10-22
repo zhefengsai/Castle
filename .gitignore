@@ -1,0 +1,29 @@
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+keystore/
+
+# Python
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Foundry build and transaction artifacts
+castle_framework/out/
+castle_framework/cache/
+castle_framework/broadcast/
+
+# Local deployment addresses may identify the deployer
+castle_framework/deployments.json
+castle_framework/deployments.breakers.json
+
+# OS and editor files
+.DS_Store
+.idea/
+.vscode/
+*.swp

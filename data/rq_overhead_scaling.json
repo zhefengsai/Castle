@@ -1,0 +1,150 @@
+{
+  "mode": "local-anvil-contract-benchmark",
+  "anvil_chain_id": 31337,
+  "normal_path": {
+    "B1": {
+      "transactions": 100,
+      "throughput_tx_s": 137.47172910773077,
+      "latency_ms_median": 7.065062993206084,
+      "latency_ms_p95": 7.942025605007075,
+      "gas_mean": 28187.0,
+      "gas_median": 28187.0
+    },
+    "B3": {
+      "transactions": 100,
+      "throughput_tx_s": 139.6038734274051,
+      "latency_ms_median": 7.077958493027836,
+      "latency_ms_p95": 7.732570488587953,
+      "gas_mean": 32895.0,
+      "gas_median": 32895.0
+    },
+    "relative": {
+      "throughput_B3_over_B1": 1.0155096930366203,
+      "median_latency_overhead_pct": 0.1825249093200254,
+      "p95_latency_overhead_pct": -2.6373009460844643,
+      "gas_overhead_pct": 16.70273530350872
+    }
+  },
+  "matched_goodput_delay": {
+    "calibration": "Both modes admit the same fault-free arrival stream; controls activate only after evidence of a fault.",
+    "fault_free_goodput_intents_s": {
+      "B3": 0.1,
+      "B3minus": 0.1
+    },
+    "B3_absolute_budget_notional": 2.0,
+    "rows": [
+      {
+        "evidence_delay_s": 20,
+        "B3minus_admitted_exposure": 2.0,
+        "B3_admitted_exposure": 2.0,
+        "B3minus_over_B3": 1.0
+      },
+      {
+        "evidence_delay_s": 40,
+        "B3minus_admitted_exposure": 4.0,
+        "B3_admitted_exposure": 2.0,
+        "B3minus_over_B3": 2.0
+      },
+      {
+        "evidence_delay_s": 60,
+        "B3minus_admitted_exposure": 6.0,
+        "B3_admitted_exposure": 2.0,
+        "B3minus_over_B3": 3.0
+      },
+      {
+        "evidence_delay_s": 120,
+        "B3minus_admitted_exposure": 12.0,
+        "B3_admitted_exposure": 2.0,
+        "B3minus_over_B3": 6.0
+      },
+      {
+        "evidence_delay_s": 180,
+        "B3minus_admitted_exposure": 18.0,
+        "B3_admitted_exposure": 2.0,
+        "B3minus_over_B3": 9.0
+      },
+      {
+        "evidence_delay_s": 240,
+        "B3minus_admitted_exposure": 24.0,
+        "B3_admitted_exposure": 2.0,
+        "B3minus_over_B3": 12.0
+      }
+    ],
+    "linear_B3minus_check": true
+  },
+  "scaling": [
+    {
+      "N": 20,
+      "transactions": 20,
+      "throughput_tx_s": 125.20502321247385,
+      "latency_ms_median": 7.668500009458512,
+      "latency_ms_p95": 9.203914605313912,
+      "gas_mean": 174340.8,
+      "gas_median": 173487.0,
+      "intent_storage_slots": 120,
+      "intent_state_bytes": 3840,
+      "intent_state_kib": 3.75,
+      "reserved_matches_N": true,
+      "window_admit_frac_B1": 0.6,
+      "window_admit_frac_B3": 0.2,
+      "U_over_ell_B1": 1.0,
+      "U_over_ell_B3": 0.3333333333333333
+    },
+    {
+      "N": 100,
+      "transactions": 100,
+      "throughput_tx_s": 106.17063282953187,
+      "latency_ms_median": 7.92214649845846,
+      "latency_ms_p95": 10.857113086967725,
+      "gas_mean": 173657.28,
+      "gas_median": 173487.0,
+      "intent_storage_slots": 600,
+      "intent_state_bytes": 19200,
+      "intent_state_kib": 18.75,
+      "reserved_matches_N": true,
+      "window_admit_frac_B1": 0.6,
+      "window_admit_frac_B3": 0.2,
+      "U_over_ell_B1": 1.0,
+      "U_over_ell_B3": 0.3333333333333333
+    },
+    {
+      "N": 500,
+      "transactions": 500,
+      "throughput_tx_s": 78.71399797973044,
+      "latency_ms_median": 10.657208476914093,
+      "latency_ms_p95": 18.923338153399516,
+      "gas_mean": 173519.256,
+      "gas_median": 173487.0,
+      "intent_storage_slots": 3000,
+      "intent_state_bytes": 96000,
+      "intent_state_kib": 93.75,
+      "reserved_matches_N": true,
+      "window_admit_frac_B1": 0.6,
+      "window_admit_frac_B3": 0.2,
+      "U_over_ell_B1": 1.0,
+      "U_over_ell_B3": 0.3333333333333333
+    },
+    {
+      "N": 1000,
+      "transactions": 1000,
+      "throughput_tx_s": 32.45008128581513,
+      "latency_ms_median": 25.692791998153552,
+      "latency_ms_p95": 51.28124734328593,
+      "gas_mean": 173502.744,
+      "gas_median": 173487.0,
+      "intent_storage_slots": 6000,
+      "intent_state_bytes": 192000,
+      "intent_state_kib": 187.5,
+      "reserved_matches_N": true,
+      "window_admit_frac_B1": 0.6,
+      "window_admit_frac_B3": 0.2,
+      "U_over_ell_B1": 1.0,
+      "U_over_ell_B3": 0.3333333333333333
+    }
+  ],
+  "storage_model": {
+    "slots_per_intent": 6,
+    "bytes_per_slot": 32,
+    "basis": "Solidity storage layout of CastleTypes.Intent"
+  }
+}

@@ -14,6 +14,8 @@ from pathlib import Path
 import matplotlib.pyplot as plt
 import numpy as np
 
+plt.rcParams["pdf.fonttype"] = 42
+
 from config import DATA_DIR, FIGURE_DIR, ensure_dirs
 from data_io import read_data
 from sync_figures import sync
@@ -117,7 +119,7 @@ def plot_d(ax, rq2: dict) -> None:
 
 
 def plot_e(ax, rq3: dict) -> None:
-    """Stagger timeline: swimlanes + annotated event times."""
+    """Show mean event offsets; the accompanying paper text reports medians."""
     soft_q = float(rq3["soft_quarantine_s"])
     freeze_b = float(rq3["hard_freeze_B_s"])
     freeze_c = float(rq3["hard_freeze_C_s"])
@@ -179,8 +181,14 @@ def plot_g(ax, rq4: dict) -> None:
 
 
 def plot_h(ax, rq4: dict) -> None:
-    # Prefer analytic sweep; annotate measured p_switch from data if present
-    r, ell, gamma, kappa, eta = 0.012, 0.25, 0.004, 0.01, 1.5
+    # Analytic sweep with the same collateral cap as the pricing driver.
+    parameters = rq4.get("pricing_parameters", {})
+    r, ell, gamma, kappa, eta = (
+        parameters.get(key, default) for key, default in
+        (("r", 0.012), ("ell", 0.25), ("gamma", 0.004), ("kappa", 0.01), ("eta", 1.0))
+    )
+    if not 0 < eta <= 1:
+        raise ValueError("pricing cap must satisfy 0 < eta <= 1; regenerate RQ4 data")
     p = np.linspace(0.0, 0.05, 100)
     pricing = rq4.get("pricing", {})
     for key, ls in (("pi_L_0.30", "-"), ("pi_L_0.70", "--")):
@@ -192,7 +200,7 @@ def plot_h(ax, rq4: dict) -> None:
             ax.axvline(pricing[key]["p_switch"], color="gray", lw=0.8, alpha=0.5)
     ax.axhline(eta, color="k", ls=":", label=r"$\eta C$")
     ax.set_xlabel(r"$p$")
-    ax.set_ylabel(r"$x^\star / C$")
+    ax.set_ylabel(r"$\widehat{x}^\star / C$")
     ax.legend(fontsize=6)
 
 
@@ -239,8 +247,8 @@ def main(only: set[str] | None = None) -> None:
                 "hop2_meas_synth": [0, 0.105, 0.19],
             },
             "pricing": {
-                "pi_L_0.30": {"p_switch": 0.0232},
-                "pi_L_0.70": {"p_switch": 0.0221},
+                "pi_L_0.30": {"p_switch": 0.03125},
+                "pi_L_0.70": {"p_switch": 0.030303030303030304},
             },
         },
     )

@@ -32,16 +32,24 @@
     "pass_origin_U_le_ell": true,
     "pass_hop2_mean_le_1_2_bound": true
   },
+  "pricing_parameters": {
+    "C": 1000000.0,
+    "r": 0.012,
+    "ell": 0.25,
+    "gamma": 0.004,
+    "kappa": 0.01,
+    "eta": 1.0
+  },
   "pricing": {
     "pi_L_0.30": {
       "x_over_C": 1.5417170495767838,
-      "x_hat_over_C": 1.5,
-      "p_switch": 0.023166023166023165
+      "x_hat_over_C": 1.0,
+      "p_switch": 0.03125
     },
     "pi_L_0.70": {
       "x_over_C": 1.4774044032444962,
-      "x_hat_over_C": 1.4774044032444962,
-      "p_switch": 0.02214022140221402
+      "x_hat_over_C": 1.0,
+      "p_switch": 0.030303030303030304
     }
   },
   "pass_alpha0_hop2_zero": true,

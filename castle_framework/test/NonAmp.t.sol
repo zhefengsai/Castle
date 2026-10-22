@@ -62,8 +62,8 @@ contract NonAmpTest is Test {
             // After slash of iids[0], status Failed — skip i==0 for reroute.
             if (i == 0) continue;
             if (i <= nLeak) {
-                // mislabel: temporarily clear az on corr
-                vault.setAzId(lpCorr, 0);
+                // A correlated recipient is incorrectly assigned a different known label.
+                vault.setAzId(lpCorr, 3);
                 vm.prank(address(hub));
                 try vault.rerouteOpen(iids[i], lpCorr) {
                     reroutedCorr += w;
@@ -75,6 +75,7 @@ contract NonAmpTest is Test {
             }
         }
 
+        assertEq(reroutedCorr, nLeak * w, "mislabels must pass the known-label check");
         hop2 = 0;
         if (nLeak > 0 && reroutedCorr > 0) {
             uint256 r = uint256(keccak256(abi.encode(seed, alphaBps, "q"))) % 10000;

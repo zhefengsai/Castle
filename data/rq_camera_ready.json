@@ -1,0 +1,4953 @@
+{
+  "mode": "local-discrete-event-replay-and-released-log-reanalysis",
+  "assumptions": {
+    "unit_notional": 1,
+    "slack_choices_s": [
+      30,
+      60,
+      120,
+      300
+    ],
+    "margin_s": 5,
+    "execution_time_after_last_freeze_s": 1,
+    "recipient_capacity": "sufficient; no additional faults",
+    "fault_free_check": "All modes admit the same 1000 requests with 1 s execution and no fault controls."
+  },
+  "same_budget_ablation": [
+    {
+      "post_activation_delay_s": 20,
+      "offered_per_run": 1000,
+      "absolute_budget_units": 20,
+      "runs": [
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 1000
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 1000
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 1000
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 1000
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 1000
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 1000
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 1000
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 1000
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 1000
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 1000
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 1000
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 1000
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 1000
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 1000
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 1000
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 1000
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 1000
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 1000
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 1000
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 1000
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 1000
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 1000
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 1000
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 1000
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 1000
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 1000
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 1000
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 1000
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 1000
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 1000
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 1.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 980
+          }
+        }
+      ],
+      "summary": {
+        "B2plus": {
+          "admitted": {
+            "mean": 0.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "exposure_units": {
+            "mean": 0.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "on_time_completions_model": {
+            "mean": 0.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "on_time_fraction_of_offered": {
+            "mean": 0.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "useful_goodput_model_per_s": {
+            "mean": 0.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "admitted_deadline_misses_model": {
+            "mean": 0.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "rejections": {
+            "mean": 1000.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "rejected_feasible": {
+            "mean": 1000.0,
+            "ci95": 0.0,
+            "n": 30
+          }
+        },
+        "budget_only": {
+          "admitted": {
+            "mean": 20.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "exposure_units": {
+            "mean": 20.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "on_time_completions_model": {
+            "mean": 20.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "on_time_fraction_of_offered": {
+            "mean": 0.02,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "on_time_fraction_of_admitted": {
+            "mean": 1.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "useful_goodput_model_per_s": {
+            "mean": 1.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "admitted_deadline_misses_model": {
+            "mean": 0.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "rejections": {
+            "mean": 980.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "rejected_feasible": {
+            "mean": 980.0,
+            "ci95": 0.0,
+            "n": 30
+          }
+        },
+        "B3": {
+          "admitted": {
+            "mean": 20.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "exposure_units": {
+            "mean": 20.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "on_time_completions_model": {
+            "mean": 20.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "on_time_fraction_of_offered": {
+            "mean": 0.02,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "on_time_fraction_of_admitted": {
+            "mean": 1.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "useful_goodput_model_per_s": {
+            "mean": 1.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "admitted_deadline_misses_model": {
+            "mean": 0.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "rejections": {
+            "mean": 980.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "rejected_feasible": {
+            "mean": 980.0,
+            "ci95": 0.0,
+            "n": 30
+          }
+        }
+      }
+    },
+    {
+      "post_activation_delay_s": 60,
+      "offered_per_run": 1000,
+      "absolute_budget_units": 20,
+      "runs": [
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 843
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 12,
+            "on_time_fraction_of_offered": 0.012,
+            "on_time_fraction_of_admitted": 0.6,
+            "useful_goodput_model_per_s": 0.2,
+            "admitted_deadline_misses_model": 8,
+            "rejections": 980,
+            "rejected_feasible": 831
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.3333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 823
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 869
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 12,
+            "on_time_fraction_of_offered": 0.012,
+            "on_time_fraction_of_admitted": 0.6,
+            "useful_goodput_model_per_s": 0.2,
+            "admitted_deadline_misses_model": 8,
+            "rejections": 980,
+            "rejected_feasible": 857
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.3333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 849
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 872
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 11,
+            "on_time_fraction_of_offered": 0.011,
+            "on_time_fraction_of_admitted": 0.55,
+            "useful_goodput_model_per_s": 0.18333333333333332,
+            "admitted_deadline_misses_model": 9,
+            "rejections": 980,
+            "rejected_feasible": 861
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.3333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 852
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 858
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 9,
+            "on_time_fraction_of_offered": 0.009,
+            "on_time_fraction_of_admitted": 0.45,
+            "useful_goodput_model_per_s": 0.15,
+            "admitted_deadline_misses_model": 11,
+            "rejections": 980,
+            "rejected_feasible": 849
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.3333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 838
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 867
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 9,
+            "on_time_fraction_of_offered": 0.009,
+            "on_time_fraction_of_admitted": 0.45,
+            "useful_goodput_model_per_s": 0.15,
+            "admitted_deadline_misses_model": 11,
+            "rejections": 980,
+            "rejected_feasible": 858
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.3333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 847
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 879
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 10,
+            "on_time_fraction_of_offered": 0.01,
+            "on_time_fraction_of_admitted": 0.5,
+            "useful_goodput_model_per_s": 0.16666666666666666,
+            "admitted_deadline_misses_model": 10,
+            "rejections": 980,
+            "rejected_feasible": 869
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.3333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 859
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 856
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 11,
+            "on_time_fraction_of_offered": 0.011,
+            "on_time_fraction_of_admitted": 0.55,
+            "useful_goodput_model_per_s": 0.18333333333333332,
+            "admitted_deadline_misses_model": 9,
+            "rejections": 980,
+            "rejected_feasible": 845
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.3333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 836
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 855
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 7,
+            "on_time_fraction_of_offered": 0.007,
+            "on_time_fraction_of_admitted": 0.35,
+            "useful_goodput_model_per_s": 0.11666666666666667,
+            "admitted_deadline_misses_model": 13,
+            "rejections": 980,
+            "rejected_feasible": 848
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.3333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 835
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 865
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 10,
+            "on_time_fraction_of_offered": 0.01,
+            "on_time_fraction_of_admitted": 0.5,
+            "useful_goodput_model_per_s": 0.16666666666666666,
+            "admitted_deadline_misses_model": 10,
+            "rejections": 980,
+            "rejected_feasible": 855
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.3333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 845
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 844
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 10,
+            "on_time_fraction_of_offered": 0.01,
+            "on_time_fraction_of_admitted": 0.5,
+            "useful_goodput_model_per_s": 0.16666666666666666,
+            "admitted_deadline_misses_model": 10,
+            "rejections": 980,
+            "rejected_feasible": 834
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.3333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 824
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 871
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 12,
+            "on_time_fraction_of_offered": 0.012,
+            "on_time_fraction_of_admitted": 0.6,
+            "useful_goodput_model_per_s": 0.2,
+            "admitted_deadline_misses_model": 8,
+            "rejections": 980,
+            "rejected_feasible": 859
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.3333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 851
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 854
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 8,
+            "on_time_fraction_of_offered": 0.008,
+            "on_time_fraction_of_admitted": 0.4,
+            "useful_goodput_model_per_s": 0.13333333333333333,
+            "admitted_deadline_misses_model": 12,
+            "rejections": 980,
+            "rejected_feasible": 846
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.3333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 834
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 881
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 13,
+            "on_time_fraction_of_offered": 0.013,
+            "on_time_fraction_of_admitted": 0.65,
+            "useful_goodput_model_per_s": 0.21666666666666667,
+            "admitted_deadline_misses_model": 7,
+            "rejections": 980,
+            "rejected_feasible": 868
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.3333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 861
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 862
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 7,
+            "on_time_fraction_of_offered": 0.007,
+            "on_time_fraction_of_admitted": 0.35,
+            "useful_goodput_model_per_s": 0.11666666666666667,
+            "admitted_deadline_misses_model": 13,
+            "rejections": 980,
+            "rejected_feasible": 855
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.3333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 842
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 863
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 15,
+            "on_time_fraction_of_offered": 0.015,
+            "on_time_fraction_of_admitted": 0.75,
+            "useful_goodput_model_per_s": 0.25,
+            "admitted_deadline_misses_model": 5,
+            "rejections": 980,
+            "rejected_feasible": 848
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.3333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 843
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 877
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 10,
+            "on_time_fraction_of_offered": 0.01,
+            "on_time_fraction_of_admitted": 0.5,
+            "useful_goodput_model_per_s": 0.16666666666666666,
+            "admitted_deadline_misses_model": 10,
+            "rejections": 980,
+            "rejected_feasible": 867
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.3333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 857
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 860
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 13,
+            "on_time_fraction_of_offered": 0.013,
+            "on_time_fraction_of_admitted": 0.65,
+            "useful_goodput_model_per_s": 0.21666666666666667,
+            "admitted_deadline_misses_model": 7,
+            "rejections": 980,
+            "rejected_feasible": 847
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.3333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 840
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 871
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 13,
+            "on_time_fraction_of_offered": 0.013,
+            "on_time_fraction_of_admitted": 0.65,
+            "useful_goodput_model_per_s": 0.21666666666666667,
+            "admitted_deadline_misses_model": 7,
+            "rejections": 980,
+            "rejected_feasible": 858
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.3333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 851
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 891
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 13,
+            "on_time_fraction_of_offered": 0.013,
+            "on_time_fraction_of_admitted": 0.65,
+            "useful_goodput_model_per_s": 0.21666666666666667,
+            "admitted_deadline_misses_model": 7,
+            "rejections": 980,
+            "rejected_feasible": 878
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.3333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 871
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 873
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 12,
+            "on_time_fraction_of_offered": 0.012,
+            "on_time_fraction_of_admitted": 0.6,
+            "useful_goodput_model_per_s": 0.2,
+            "admitted_deadline_misses_model": 8,
+            "rejections": 980,
+            "rejected_feasible": 861
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.3333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 853
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 845
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 11,
+            "on_time_fraction_of_offered": 0.011,
+            "on_time_fraction_of_admitted": 0.55,
+            "useful_goodput_model_per_s": 0.18333333333333332,
+            "admitted_deadline_misses_model": 9,
+            "rejections": 980,
+            "rejected_feasible": 834
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.3333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 825
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 875
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 9,
+            "on_time_fraction_of_offered": 0.009,
+            "on_time_fraction_of_admitted": 0.45,
+            "useful_goodput_model_per_s": 0.15,
+            "admitted_deadline_misses_model": 11,
+            "rejections": 980,
+            "rejected_feasible": 866
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.3333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 855
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 860
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 9,
+            "on_time_fraction_of_offered": 0.009,
+            "on_time_fraction_of_admitted": 0.45,
+            "useful_goodput_model_per_s": 0.15,
+            "admitted_deadline_misses_model": 11,
+            "rejections": 980,
+            "rejected_feasible": 851
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.3333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 840
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 857
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 10,
+            "on_time_fraction_of_offered": 0.01,
+            "on_time_fraction_of_admitted": 0.5,
+            "useful_goodput_model_per_s": 0.16666666666666666,
+            "admitted_deadline_misses_model": 10,
+            "rejections": 980,
+            "rejected_feasible": 847
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.3333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 837
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 876
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 8,
+            "on_time_fraction_of_offered": 0.008,
+            "on_time_fraction_of_admitted": 0.4,
+            "useful_goodput_model_per_s": 0.13333333333333333,
+            "admitted_deadline_misses_model": 12,
+            "rejections": 980,
+            "rejected_feasible": 868
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.3333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 856
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 843
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 10,
+            "on_time_fraction_of_offered": 0.01,
+            "on_time_fraction_of_admitted": 0.5,
+            "useful_goodput_model_per_s": 0.16666666666666666,
+            "admitted_deadline_misses_model": 10,
+            "rejections": 980,
+            "rejected_feasible": 833
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.3333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 823
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 848
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 7,
+            "on_time_fraction_of_offered": 0.007,
+            "on_time_fraction_of_admitted": 0.35,
+            "useful_goodput_model_per_s": 0.11666666666666667,
+            "admitted_deadline_misses_model": 13,
+            "rejections": 980,
+            "rejected_feasible": 841
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.3333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 828
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 856
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 11,
+            "on_time_fraction_of_offered": 0.011,
+            "on_time_fraction_of_admitted": 0.55,
+            "useful_goodput_model_per_s": 0.18333333333333332,
+            "admitted_deadline_misses_model": 9,
+            "rejections": 980,
+            "rejected_feasible": 845
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.3333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 836
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 855
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 5,
+            "on_time_fraction_of_offered": 0.005,
+            "on_time_fraction_of_admitted": 0.25,
+            "useful_goodput_model_per_s": 0.08333333333333333,
+            "admitted_deadline_misses_model": 15,
+            "rejections": 980,
+            "rejected_feasible": 850
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.3333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 835
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 870
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 13,
+            "on_time_fraction_of_offered": 0.013,
+            "on_time_fraction_of_admitted": 0.65,
+            "useful_goodput_model_per_s": 0.21666666666666667,
+            "admitted_deadline_misses_model": 7,
+            "rejections": 980,
+            "rejected_feasible": 857
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.3333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 850
+          }
+        }
+      ],
+      "summary": {
+        "B2plus": {
+          "admitted": {
+            "mean": 0.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "exposure_units": {
+            "mean": 0.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "on_time_completions_model": {
+            "mean": 0.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "on_time_fraction_of_offered": {
+            "mean": 0.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "useful_goodput_model_per_s": {
+            "mean": 0.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "admitted_deadline_misses_model": {
+            "mean": 0.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "rejections": {
+            "mean": 1000.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "rejected_feasible": {
+            "mean": 863.2,
+            "ci95": 4.399185462745596,
+            "n": 30
+          }
+        },
+        "budget_only": {
+          "admitted": {
+            "mean": 20.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "exposure_units": {
+            "mean": 20.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "on_time_completions_model": {
+            "mean": 10.333333333333334,
+            "ci95": 0.8156522435299733,
+            "n": 30
+          },
+          "on_time_fraction_of_offered": {
+            "mean": 0.010333333333333333,
+            "ci95": 0.0008156522435299734,
+            "n": 30
+          },
+          "on_time_fraction_of_admitted": {
+            "mean": 0.5166666666666667,
+            "ci95": 0.040782612176498666,
+            "n": 30
+          },
+          "useful_goodput_model_per_s": {
+            "mean": 0.17222222222222222,
+            "ci95": 0.01359420405883289,
+            "n": 30
+          },
+          "admitted_deadline_misses_model": {
+            "mean": 9.666666666666666,
+            "ci95": 0.8156522435299733,
+            "n": 30
+          },
+          "rejections": {
+            "mean": 980.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "rejected_feasible": {
+            "mean": 852.8666666666667,
+            "ci95": 4.217085656344935,
+            "n": 30
+          }
+        },
+        "B3": {
+          "admitted": {
+            "mean": 20.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "exposure_units": {
+            "mean": 20.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "on_time_completions_model": {
+            "mean": 20.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "on_time_fraction_of_offered": {
+            "mean": 0.02,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "on_time_fraction_of_admitted": {
+            "mean": 1.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "useful_goodput_model_per_s": {
+            "mean": 0.3333333333333333,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "admitted_deadline_misses_model": {
+            "mean": 0.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "rejections": {
+            "mean": 980.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "rejected_feasible": {
+            "mean": 843.2,
+            "ci95": 4.399185462745596,
+            "n": 30
+          }
+        }
+      }
+    },
+    {
+      "post_activation_delay_s": 120,
+      "offered_per_run": 1000,
+      "absolute_budget_units": 20,
+      "runs": [
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 674
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 9,
+            "on_time_fraction_of_offered": 0.009,
+            "on_time_fraction_of_admitted": 0.45,
+            "useful_goodput_model_per_s": 0.075,
+            "admitted_deadline_misses_model": 11,
+            "rejections": 980,
+            "rejected_feasible": 665
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.16666666666666666,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 654
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 679
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 10,
+            "on_time_fraction_of_offered": 0.01,
+            "on_time_fraction_of_admitted": 0.5,
+            "useful_goodput_model_per_s": 0.08333333333333333,
+            "admitted_deadline_misses_model": 10,
+            "rejections": 980,
+            "rejected_feasible": 669
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.16666666666666666,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 659
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 693
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 8,
+            "on_time_fraction_of_offered": 0.008,
+            "on_time_fraction_of_admitted": 0.4,
+            "useful_goodput_model_per_s": 0.06666666666666667,
+            "admitted_deadline_misses_model": 12,
+            "rejections": 980,
+            "rejected_feasible": 685
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.16666666666666666,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 673
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 679
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 6,
+            "on_time_fraction_of_offered": 0.006,
+            "on_time_fraction_of_admitted": 0.3,
+            "useful_goodput_model_per_s": 0.05,
+            "admitted_deadline_misses_model": 14,
+            "rejections": 980,
+            "rejected_feasible": 673
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.16666666666666666,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 659
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 677
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 7,
+            "on_time_fraction_of_offered": 0.007,
+            "on_time_fraction_of_admitted": 0.35,
+            "useful_goodput_model_per_s": 0.058333333333333334,
+            "admitted_deadline_misses_model": 13,
+            "rejections": 980,
+            "rejected_feasible": 670
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.16666666666666666,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 657
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 686
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 6,
+            "on_time_fraction_of_offered": 0.006,
+            "on_time_fraction_of_admitted": 0.3,
+            "useful_goodput_model_per_s": 0.05,
+            "admitted_deadline_misses_model": 14,
+            "rejections": 980,
+            "rejected_feasible": 680
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.16666666666666666,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 666
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 681
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 8,
+            "on_time_fraction_of_offered": 0.008,
+            "on_time_fraction_of_admitted": 0.4,
+            "useful_goodput_model_per_s": 0.06666666666666667,
+            "admitted_deadline_misses_model": 12,
+            "rejections": 980,
+            "rejected_feasible": 673
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.16666666666666666,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 661
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 669
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 4,
+            "on_time_fraction_of_offered": 0.004,
+            "on_time_fraction_of_admitted": 0.2,
+            "useful_goodput_model_per_s": 0.03333333333333333,
+            "admitted_deadline_misses_model": 16,
+            "rejections": 980,
+            "rejected_feasible": 665
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.16666666666666666,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 649
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 682
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 8,
+            "on_time_fraction_of_offered": 0.008,
+            "on_time_fraction_of_admitted": 0.4,
+            "useful_goodput_model_per_s": 0.06666666666666667,
+            "admitted_deadline_misses_model": 12,
+            "rejections": 980,
+            "rejected_feasible": 674
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.16666666666666666,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 662
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 656
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 6,
+            "on_time_fraction_of_offered": 0.006,
+            "on_time_fraction_of_admitted": 0.3,
+            "useful_goodput_model_per_s": 0.05,
+            "admitted_deadline_misses_model": 14,
+            "rejections": 980,
+            "rejected_feasible": 650
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.16666666666666666,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 636
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 689
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 10,
+            "on_time_fraction_of_offered": 0.01,
+            "on_time_fraction_of_admitted": 0.5,
+            "useful_goodput_model_per_s": 0.08333333333333333,
+            "admitted_deadline_misses_model": 10,
+            "rejections": 980,
+            "rejected_feasible": 679
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.16666666666666666,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 669
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 665
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 8,
+            "on_time_fraction_of_offered": 0.008,
+            "on_time_fraction_of_admitted": 0.4,
+            "useful_goodput_model_per_s": 0.06666666666666667,
+            "admitted_deadline_misses_model": 12,
+            "rejections": 980,
+            "rejected_feasible": 657
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.16666666666666666,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 645
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 698
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 7,
+            "on_time_fraction_of_offered": 0.007,
+            "on_time_fraction_of_admitted": 0.35,
+            "useful_goodput_model_per_s": 0.058333333333333334,
+            "admitted_deadline_misses_model": 13,
+            "rejections": 980,
+            "rejected_feasible": 691
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.16666666666666666,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 678
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 668
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 5,
+            "on_time_fraction_of_offered": 0.005,
+            "on_time_fraction_of_admitted": 0.25,
+            "useful_goodput_model_per_s": 0.041666666666666664,
+            "admitted_deadline_misses_model": 15,
+            "rejections": 980,
+            "rejected_feasible": 663
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.16666666666666666,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 648
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 677
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 9,
+            "on_time_fraction_of_offered": 0.009,
+            "on_time_fraction_of_admitted": 0.45,
+            "useful_goodput_model_per_s": 0.075,
+            "admitted_deadline_misses_model": 11,
+            "rejections": 980,
+            "rejected_feasible": 668
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.16666666666666666,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 657
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 696
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 7,
+            "on_time_fraction_of_offered": 0.007,
+            "on_time_fraction_of_admitted": 0.35,
+            "useful_goodput_model_per_s": 0.058333333333333334,
+            "admitted_deadline_misses_model": 13,
+            "rejections": 980,
+            "rejected_feasible": 689
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.16666666666666666,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 676
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 668
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 10,
+            "on_time_fraction_of_offered": 0.01,
+            "on_time_fraction_of_admitted": 0.5,
+            "useful_goodput_model_per_s": 0.08333333333333333,
+            "admitted_deadline_misses_model": 10,
+            "rejections": 980,
+            "rejected_feasible": 658
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.16666666666666666,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 648
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 695
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 6,
+            "on_time_fraction_of_offered": 0.006,
+            "on_time_fraction_of_admitted": 0.3,
+            "useful_goodput_model_per_s": 0.05,
+            "admitted_deadline_misses_model": 14,
+            "rejections": 980,
+            "rejected_feasible": 689
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.16666666666666666,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 675
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 683
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 9,
+            "on_time_fraction_of_offered": 0.009,
+            "on_time_fraction_of_admitted": 0.45,
+            "useful_goodput_model_per_s": 0.075,
+            "admitted_deadline_misses_model": 11,
+            "rejections": 980,
+            "rejected_feasible": 674
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.16666666666666666,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 663
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 709
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 7,
+            "on_time_fraction_of_offered": 0.007,
+            "on_time_fraction_of_admitted": 0.35,
+            "useful_goodput_model_per_s": 0.058333333333333334,
+            "admitted_deadline_misses_model": 13,
+            "rejections": 980,
+            "rejected_feasible": 702
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.16666666666666666,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 689
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 647
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 9,
+            "on_time_fraction_of_offered": 0.009,
+            "on_time_fraction_of_admitted": 0.45,
+            "useful_goodput_model_per_s": 0.075,
+            "admitted_deadline_misses_model": 11,
+            "rejections": 980,
+            "rejected_feasible": 638
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.16666666666666666,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 627
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 679
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 8,
+            "on_time_fraction_of_offered": 0.008,
+            "on_time_fraction_of_admitted": 0.4,
+            "useful_goodput_model_per_s": 0.06666666666666667,
+            "admitted_deadline_misses_model": 12,
+            "rejections": 980,
+            "rejected_feasible": 671
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.16666666666666666,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 659
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 673
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 7,
+            "on_time_fraction_of_offered": 0.007,
+            "on_time_fraction_of_admitted": 0.35,
+            "useful_goodput_model_per_s": 0.058333333333333334,
+            "admitted_deadline_misses_model": 13,
+            "rejections": 980,
+            "rejected_feasible": 666
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.16666666666666666,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 653
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 667
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 7,
+            "on_time_fraction_of_offered": 0.007,
+            "on_time_fraction_of_admitted": 0.35,
+            "useful_goodput_model_per_s": 0.058333333333333334,
+            "admitted_deadline_misses_model": 13,
+            "rejections": 980,
+            "rejected_feasible": 660
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.16666666666666666,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 647
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 678
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 7,
+            "on_time_fraction_of_offered": 0.007,
+            "on_time_fraction_of_admitted": 0.35,
+            "useful_goodput_model_per_s": 0.058333333333333334,
+            "admitted_deadline_misses_model": 13,
+            "rejections": 980,
+            "rejected_feasible": 671
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.16666666666666666,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 658
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 673
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 7,
+            "on_time_fraction_of_offered": 0.007,
+            "on_time_fraction_of_admitted": 0.35,
+            "useful_goodput_model_per_s": 0.058333333333333334,
+            "admitted_deadline_misses_model": 13,
+            "rejections": 980,
+            "rejected_feasible": 666
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.16666666666666666,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 653
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 688
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 7,
+            "on_time_fraction_of_offered": 0.007,
+            "on_time_fraction_of_admitted": 0.35,
+            "useful_goodput_model_per_s": 0.058333333333333334,
+            "admitted_deadline_misses_model": 13,
+            "rejections": 980,
+            "rejected_feasible": 681
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.16666666666666666,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 668
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 674
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 6,
+            "on_time_fraction_of_offered": 0.006,
+            "on_time_fraction_of_admitted": 0.3,
+            "useful_goodput_model_per_s": 0.05,
+            "admitted_deadline_misses_model": 14,
+            "rejections": 980,
+            "rejected_feasible": 668
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.16666666666666666,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 654
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 686
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 4,
+            "on_time_fraction_of_offered": 0.004,
+            "on_time_fraction_of_admitted": 0.2,
+            "useful_goodput_model_per_s": 0.03333333333333333,
+            "admitted_deadline_misses_model": 16,
+            "rejections": 980,
+            "rejected_feasible": 682
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.16666666666666666,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 666
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 676
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 8,
+            "on_time_fraction_of_offered": 0.008,
+            "on_time_fraction_of_admitted": 0.4,
+            "useful_goodput_model_per_s": 0.06666666666666667,
+            "admitted_deadline_misses_model": 12,
+            "rejections": 980,
+            "rejected_feasible": 668
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.16666666666666666,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 656
+          }
+        }
+      ],
+      "summary": {
+        "B2plus": {
+          "admitted": {
+            "mean": 0.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "exposure_units": {
+            "mean": 0.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "on_time_completions_model": {
+            "mean": 0.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "on_time_fraction_of_offered": {
+            "mean": 0.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "useful_goodput_model_per_s": {
+            "mean": 0.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "admitted_deadline_misses_model": {
+            "mean": 0.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "rejections": {
+            "mean": 1000.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "rejected_feasible": {
+            "mean": 678.8333333333334,
+            "ci95": 4.547917884936205,
+            "n": 30
+          }
+        },
+        "budget_only": {
+          "admitted": {
+            "mean": 20.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "exposure_units": {
+            "mean": 20.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "on_time_completions_model": {
+            "mean": 7.333333333333333,
+            "ci95": 0.5664532390503662,
+            "n": 30
+          },
+          "on_time_fraction_of_offered": {
+            "mean": 0.007333333333333333,
+            "ci95": 0.0005664532390503662,
+            "n": 30
+          },
+          "on_time_fraction_of_admitted": {
+            "mean": 0.36666666666666664,
+            "ci95": 0.02832266195251831,
+            "n": 30
+          },
+          "useful_goodput_model_per_s": {
+            "mean": 0.06111111111111111,
+            "ci95": 0.004720443658753052,
+            "n": 30
+          },
+          "admitted_deadline_misses_model": {
+            "mean": 12.666666666666666,
+            "ci95": 0.5664532390503662,
+            "n": 30
+          },
+          "rejections": {
+            "mean": 980.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "rejected_feasible": {
+            "mean": 671.5,
+            "ci95": 4.615062495685239,
+            "n": 30
+          }
+        },
+        "B3": {
+          "admitted": {
+            "mean": 20.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "exposure_units": {
+            "mean": 20.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "on_time_completions_model": {
+            "mean": 20.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "on_time_fraction_of_offered": {
+            "mean": 0.02,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "on_time_fraction_of_admitted": {
+            "mean": 1.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "useful_goodput_model_per_s": {
+            "mean": 0.16666666666666666,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "admitted_deadline_misses_model": {
+            "mean": 0.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "rejections": {
+            "mean": 980.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "rejected_feasible": {
+            "mean": 658.8333333333334,
+            "ci95": 4.547917884936205,
+            "n": 30
+          }
+        }
+      }
+    },
+    {
+      "post_activation_delay_s": 240,
+      "offered_per_run": 1000,
+      "absolute_budget_units": 20,
+      "runs": [
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 471
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 5,
+            "on_time_fraction_of_offered": 0.005,
+            "on_time_fraction_of_admitted": 0.25,
+            "useful_goodput_model_per_s": 0.020833333333333332,
+            "admitted_deadline_misses_model": 15,
+            "rejections": 980,
+            "rejected_feasible": 466
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.08333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 451
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 461
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 8,
+            "on_time_fraction_of_offered": 0.008,
+            "on_time_fraction_of_admitted": 0.4,
+            "useful_goodput_model_per_s": 0.03333333333333333,
+            "admitted_deadline_misses_model": 12,
+            "rejections": 980,
+            "rejected_feasible": 453
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.08333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 441
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 471
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 4,
+            "on_time_fraction_of_offered": 0.004,
+            "on_time_fraction_of_admitted": 0.2,
+            "useful_goodput_model_per_s": 0.016666666666666666,
+            "admitted_deadline_misses_model": 16,
+            "rejections": 980,
+            "rejected_feasible": 467
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.08333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 451
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 459
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 6,
+            "on_time_fraction_of_offered": 0.006,
+            "on_time_fraction_of_admitted": 0.3,
+            "useful_goodput_model_per_s": 0.025,
+            "admitted_deadline_misses_model": 14,
+            "rejections": 980,
+            "rejected_feasible": 453
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.08333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 439
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 441
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 3,
+            "on_time_fraction_of_offered": 0.003,
+            "on_time_fraction_of_admitted": 0.15,
+            "useful_goodput_model_per_s": 0.0125,
+            "admitted_deadline_misses_model": 17,
+            "rejections": 980,
+            "rejected_feasible": 438
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.08333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 421
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 453
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 5,
+            "on_time_fraction_of_offered": 0.005,
+            "on_time_fraction_of_admitted": 0.25,
+            "useful_goodput_model_per_s": 0.020833333333333332,
+            "admitted_deadline_misses_model": 15,
+            "rejections": 980,
+            "rejected_feasible": 448
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.08333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 433
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 451
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 5,
+            "on_time_fraction_of_offered": 0.005,
+            "on_time_fraction_of_admitted": 0.25,
+            "useful_goodput_model_per_s": 0.020833333333333332,
+            "admitted_deadline_misses_model": 15,
+            "rejections": 980,
+            "rejected_feasible": 446
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.08333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 431
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 465
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 4,
+            "on_time_fraction_of_offered": 0.004,
+            "on_time_fraction_of_admitted": 0.2,
+            "useful_goodput_model_per_s": 0.016666666666666666,
+            "admitted_deadline_misses_model": 16,
+            "rejections": 980,
+            "rejected_feasible": 461
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.08333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 445
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 464
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 8,
+            "on_time_fraction_of_offered": 0.008,
+            "on_time_fraction_of_admitted": 0.4,
+            "useful_goodput_model_per_s": 0.03333333333333333,
+            "admitted_deadline_misses_model": 12,
+            "rejections": 980,
+            "rejected_feasible": 456
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.08333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 444
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 448
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 5,
+            "on_time_fraction_of_offered": 0.005,
+            "on_time_fraction_of_admitted": 0.25,
+            "useful_goodput_model_per_s": 0.020833333333333332,
+            "admitted_deadline_misses_model": 15,
+            "rejections": 980,
+            "rejected_feasible": 443
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.08333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 428
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 488
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 7,
+            "on_time_fraction_of_offered": 0.007,
+            "on_time_fraction_of_admitted": 0.35,
+            "useful_goodput_model_per_s": 0.029166666666666667,
+            "admitted_deadline_misses_model": 13,
+            "rejections": 980,
+            "rejected_feasible": 481
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.08333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 468
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 481
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 7,
+            "on_time_fraction_of_offered": 0.007,
+            "on_time_fraction_of_admitted": 0.35,
+            "useful_goodput_model_per_s": 0.029166666666666667,
+            "admitted_deadline_misses_model": 13,
+            "rejections": 980,
+            "rejected_feasible": 474
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.08333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 461
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 455
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 5,
+            "on_time_fraction_of_offered": 0.005,
+            "on_time_fraction_of_admitted": 0.25,
+            "useful_goodput_model_per_s": 0.020833333333333332,
+            "admitted_deadline_misses_model": 15,
+            "rejections": 980,
+            "rejected_feasible": 450
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.08333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 435
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 466
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 2,
+            "on_time_fraction_of_offered": 0.002,
+            "on_time_fraction_of_admitted": 0.1,
+            "useful_goodput_model_per_s": 0.008333333333333333,
+            "admitted_deadline_misses_model": 18,
+            "rejections": 980,
+            "rejected_feasible": 464
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.08333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 446
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 463
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 4,
+            "on_time_fraction_of_offered": 0.004,
+            "on_time_fraction_of_admitted": 0.2,
+            "useful_goodput_model_per_s": 0.016666666666666666,
+            "admitted_deadline_misses_model": 16,
+            "rejections": 980,
+            "rejected_feasible": 459
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.08333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 443
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 472
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 2,
+            "on_time_fraction_of_offered": 0.002,
+            "on_time_fraction_of_admitted": 0.1,
+            "useful_goodput_model_per_s": 0.008333333333333333,
+            "admitted_deadline_misses_model": 18,
+            "rejections": 980,
+            "rejected_feasible": 470
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.08333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 452
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 474
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 5,
+            "on_time_fraction_of_offered": 0.005,
+            "on_time_fraction_of_admitted": 0.25,
+            "useful_goodput_model_per_s": 0.020833333333333332,
+            "admitted_deadline_misses_model": 15,
+            "rejections": 980,
+            "rejected_feasible": 469
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.08333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 454
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 462
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 4,
+            "on_time_fraction_of_offered": 0.004,
+            "on_time_fraction_of_admitted": 0.2,
+            "useful_goodput_model_per_s": 0.016666666666666666,
+            "admitted_deadline_misses_model": 16,
+            "rejections": 980,
+            "rejected_feasible": 458
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.08333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 442
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 462
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 5,
+            "on_time_fraction_of_offered": 0.005,
+            "on_time_fraction_of_admitted": 0.25,
+            "useful_goodput_model_per_s": 0.020833333333333332,
+            "admitted_deadline_misses_model": 15,
+            "rejections": 980,
+            "rejected_feasible": 457
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.08333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 442
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 494
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 2,
+            "on_time_fraction_of_offered": 0.002,
+            "on_time_fraction_of_admitted": 0.1,
+            "useful_goodput_model_per_s": 0.008333333333333333,
+            "admitted_deadline_misses_model": 18,
+            "rejections": 980,
+            "rejected_feasible": 492
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.08333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 474
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 430
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 5,
+            "on_time_fraction_of_offered": 0.005,
+            "on_time_fraction_of_admitted": 0.25,
+            "useful_goodput_model_per_s": 0.020833333333333332,
+            "admitted_deadline_misses_model": 15,
+            "rejections": 980,
+            "rejected_feasible": 425
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.08333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 410
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 476
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 7,
+            "on_time_fraction_of_offered": 0.007,
+            "on_time_fraction_of_admitted": 0.35,
+            "useful_goodput_model_per_s": 0.029166666666666667,
+            "admitted_deadline_misses_model": 13,
+            "rejections": 980,
+            "rejected_feasible": 469
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.08333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 456
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 449
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 3,
+            "on_time_fraction_of_offered": 0.003,
+            "on_time_fraction_of_admitted": 0.15,
+            "useful_goodput_model_per_s": 0.0125,
+            "admitted_deadline_misses_model": 17,
+            "rejections": 980,
+            "rejected_feasible": 446
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.08333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 429
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 441
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 6,
+            "on_time_fraction_of_offered": 0.006,
+            "on_time_fraction_of_admitted": 0.3,
+            "useful_goodput_model_per_s": 0.025,
+            "admitted_deadline_misses_model": 14,
+            "rejections": 980,
+            "rejected_feasible": 435
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.08333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 421
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 467
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 6,
+            "on_time_fraction_of_offered": 0.006,
+            "on_time_fraction_of_admitted": 0.3,
+            "useful_goodput_model_per_s": 0.025,
+            "admitted_deadline_misses_model": 14,
+            "rejections": 980,
+            "rejected_feasible": 461
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.08333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 447
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 458
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 4,
+            "on_time_fraction_of_offered": 0.004,
+            "on_time_fraction_of_admitted": 0.2,
+            "useful_goodput_model_per_s": 0.016666666666666666,
+            "admitted_deadline_misses_model": 16,
+            "rejections": 980,
+            "rejected_feasible": 454
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.08333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 438
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 475
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 6,
+            "on_time_fraction_of_offered": 0.006,
+            "on_time_fraction_of_admitted": 0.3,
+            "useful_goodput_model_per_s": 0.025,
+            "admitted_deadline_misses_model": 14,
+            "rejections": 980,
+            "rejected_feasible": 469
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.08333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 455
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 462
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 5,
+            "on_time_fraction_of_offered": 0.005,
+            "on_time_fraction_of_admitted": 0.25,
+            "useful_goodput_model_per_s": 0.020833333333333332,
+            "admitted_deadline_misses_model": 15,
+            "rejections": 980,
+            "rejected_feasible": 457
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.08333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 442
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 466
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 4,
+            "on_time_fraction_of_offered": 0.004,
+            "on_time_fraction_of_admitted": 0.2,
+            "useful_goodput_model_per_s": 0.016666666666666666,
+            "admitted_deadline_misses_model": 16,
+            "rejections": 980,
+            "rejected_feasible": 462
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.08333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 446
+          }
+        },
+        {
+          "B2plus": {
+            "admitted": 0,
+            "exposure_units": 0,
+            "on_time_completions_model": 0,
+            "on_time_fraction_of_offered": 0.0,
+            "on_time_fraction_of_admitted": null,
+            "useful_goodput_model_per_s": 0.0,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 1000,
+            "rejected_feasible": 439
+          },
+          "budget_only": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 6,
+            "on_time_fraction_of_offered": 0.006,
+            "on_time_fraction_of_admitted": 0.3,
+            "useful_goodput_model_per_s": 0.025,
+            "admitted_deadline_misses_model": 14,
+            "rejections": 980,
+            "rejected_feasible": 433
+          },
+          "B3": {
+            "admitted": 20,
+            "exposure_units": 20,
+            "on_time_completions_model": 20,
+            "on_time_fraction_of_offered": 0.02,
+            "on_time_fraction_of_admitted": 1.0,
+            "useful_goodput_model_per_s": 0.08333333333333333,
+            "admitted_deadline_misses_model": 0,
+            "rejections": 980,
+            "rejected_feasible": 419
+          }
+        }
+      ],
+      "summary": {
+        "B2plus": {
+          "admitted": {
+            "mean": 0.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "exposure_units": {
+            "mean": 0.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "on_time_completions_model": {
+            "mean": 0.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "on_time_fraction_of_offered": {
+            "mean": 0.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "useful_goodput_model_per_s": {
+            "mean": 0.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "admitted_deadline_misses_model": {
+            "mean": 0.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "rejections": {
+            "mean": 1000.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "rejected_feasible": {
+            "mean": 462.1333333333333,
+            "ci95": 5.13839716798329,
+            "n": 30
+          }
+        },
+        "budget_only": {
+          "admitted": {
+            "mean": 20.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "exposure_units": {
+            "mean": 20.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "on_time_completions_model": {
+            "mean": 4.933333333333334,
+            "ci95": 0.5787912361285,
+            "n": 30
+          },
+          "on_time_fraction_of_offered": {
+            "mean": 0.004933333333333333,
+            "ci95": 0.0005787912361285,
+            "n": 30
+          },
+          "on_time_fraction_of_admitted": {
+            "mean": 0.24666666666666667,
+            "ci95": 0.028939561806425,
+            "n": 30
+          },
+          "useful_goodput_model_per_s": {
+            "mean": 0.020555555555555556,
+            "ci95": 0.0024116301505354167,
+            "n": 30
+          },
+          "admitted_deadline_misses_model": {
+            "mean": 15.066666666666666,
+            "ci95": 0.5787912361285,
+            "n": 30
+          },
+          "rejections": {
+            "mean": 980.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "rejected_feasible": {
+            "mean": 457.2,
+            "ci95": 5.162972822688116,
+            "n": 30
+          }
+        },
+        "B3": {
+          "admitted": {
+            "mean": 20.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "exposure_units": {
+            "mean": 20.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "on_time_completions_model": {
+            "mean": 20.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "on_time_fraction_of_offered": {
+            "mean": 0.02,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "on_time_fraction_of_admitted": {
+            "mean": 1.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "useful_goodput_model_per_s": {
+            "mean": 0.08333333333333333,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "admitted_deadline_misses_model": {
+            "mean": 0.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "rejections": {
+            "mean": 980.0,
+            "ci95": 0.0,
+            "n": 30
+          },
+          "rejected_feasible": {
+            "mean": 442.1333333333333,
+            "ci95": 5.13839716798329,
+            "n": 30
+          }
+        }
+      }
+    }
+  ],
+  "label_sensitivity": [
+    {
+      "epsilon_fn_given_correlated": 0.0,
+      "true_correlation_prevalence": 0.5,
+      "q": 0.4,
+      "routed_mass_leakage_alpha": {
+        "mean": 0.0,
+        "ci95": 0.0,
+        "n": 1000
+      },
+      "secondary_shortfall_over_routed_mass": {
+        "mean": 0.0,
+        "ci95": 0.0,
+        "n": 1000
+      },
+      "expected_secondary_given_sampled_alpha": 0.0
+    },
+    {
+      "epsilon_fn_given_correlated": 0.1,
+      "true_correlation_prevalence": 0.5,
+      "q": 0.4,
+      "routed_mass_leakage_alpha": {
+        "mean": 0.09091421339757551,
+        "ci95": 0.0006793353442804733,
+        "n": 1000
+      },
+      "secondary_shortfall_over_routed_mass": {
+        "mean": 0.03712693738837349,
+        "ci95": 0.0028132439207925394,
+        "n": 1000
+      },
+      "expected_secondary_given_sampled_alpha": 0.0363656853590302
+    },
+    {
+      "epsilon_fn_given_correlated": 0.25,
+      "true_correlation_prevalence": 0.5,
+      "q": 0.4,
+      "routed_mass_leakage_alpha": {
+        "mean": 0.19962694078170054,
+        "ci95": 0.0007540633046521255,
+        "n": 1000
+      },
+      "secondary_shortfall_over_routed_mass": {
+        "mean": 0.08146155188401703,
+        "ci95": 0.006115910310843225,
+        "n": 1000
+      },
+      "expected_secondary_given_sampled_alpha": 0.07985077631268023
+    },
+    {
+      "epsilon_fn_given_correlated": 0.5,
+      "true_correlation_prevalence": 0.5,
+      "q": 0.4,
+      "routed_mass_leakage_alpha": {
+        "mean": 0.3335558544569761,
+        "ci95": 0.0006403725586763963,
+        "n": 1000
+      },
+      "secondary_shortfall_over_routed_mass": {
+        "mean": 0.1358523604931436,
+        "ci95": 0.010176999711251489,
+        "n": 1000
+      },
+      "expected_secondary_given_sampled_alpha": 0.13342234178279044
+    },
+    {
+      "epsilon_fn_given_correlated": 0.75,
+      "true_correlation_prevalence": 0.5,
+      "q": 0.4,
+      "routed_mass_leakage_alpha": {
+        "mean": 0.4282406820240356,
+        "ci95": 0.00039464222352925756,
+        "n": 1000
+      },
+      "secondary_shortfall_over_routed_mass": {
+        "mean": 0.17434267034487616,
+        "ci95": 0.013052349334889605,
+        "n": 1000
+      },
+      "expected_secondary_given_sampled_alpha": 0.17129627280961424
+    },
+    {
+      "epsilon_fn_given_correlated": 1.0,
+      "true_correlation_prevalence": 0.5,
+      "q": 0.4,
+      "routed_mass_leakage_alpha": {
+        "mean": 0.5,
+        "ci95": 0.0,
+        "n": 1000
+      },
+      "secondary_shortfall_over_routed_mass": {
+        "mean": 0.2035,
+        "ci95": 0.015232384118250362,
+        "n": 1000
+      },
+      "expected_secondary_given_sampled_alpha": 0.2
+    }
+  ],
+  "released_log_reanalysis": {
+    "rq1_end_to_end": {
+      "fast": {
+        "n": 10,
+        "median_s": 40.5,
+        "p95_s": 52.65
+      },
+      "mid60": {
+        "n": 10,
+        "median_s": 116.0,
+        "p95_s": 118.55
+      },
+      "slow120": {
+        "n": 10,
+        "median_s": 176.0,
+        "p95_s": 180.0
+      }
+    },
+    "rq3_recorded_times": {
+      "hard_freeze_B_s": {
+        "n": 20,
+        "median_s": 16.0,
+        "p95_s": 18.1
+      },
+      "soft_quarantine_s": {
+        "n": 20,
+        "median_s": 24.0,
+        "p95_s": 36.1
+      },
+      "hard_freeze_C_s": {
+        "n": 20,
+        "median_s": 46.5,
+        "p95_s": 58.0
+      }
+    },
+    "limitations": [
+      "RQ1 total L includes workload setup/admission time; mid/slow paths include injected delay.",
+      "RQ3 hub time is host wall-clock after receipt, not an independent hub block timestamp.",
+      "Cross-chain/host clock skew is not calibrated. These are recorded offsets, not component-delay distributions.",
+      "RQ1 budget probe is separate from timing run; RQ3 submits window admissions after hub activation.",
+      "Released logs do not measure admissions between fault occurrence and hub activation."
+    ]
+  },
+  "gas_cost_sensitivity": {
+    "additional_fault_gas_approx": 76500,
+    "gas_price_gwei": [
+      1,
+      10,
+      100
+    ],
+    "additional_native_token_cost": [
+      7.65e-05,
+      0.0007650000000000001,
+      0.0076500000000000005
+    ],
+    "note": "Scenario calculation, not measured prices or a cost-benefit claim."
+  }
+}

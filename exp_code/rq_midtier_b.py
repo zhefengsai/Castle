@@ -15,7 +15,7 @@ import numpy as np
 
 from config import ensure_dirs
 from data_io import write_data
-from rq4_nonamp_pricing import NOTIONAL, VaultSim, race_coupled
+from rq4_nonamp_pricing import NOTIONAL, PRICING_PARAMETERS, VaultSim, race_coupled
 from rq_scaling_falsefreeze import FREE0, LOSS, WINDOW_ATTEMPTS, _window_admits
 from stats_util import mean_ci95
 
@@ -78,10 +78,12 @@ def sim_one_shock_eps(eps: float, alpha_policy: float = 0.0, q: float = 0.4, see
     rerouted_corr = 0
     for i, iid in enumerate(iids):
         if i < n_policy + n_fn:
-            v.reroute(iid, lp_corr, enforce_chi=False)
+            v.az[lp_corr] = 3  # Incorrect known label; ground truth remains correlated.
+            v.reroute(iid, lp_corr)
+            v.az[lp_corr] = 1
             rerouted_corr += w
         else:
-            v.reroute(iid, lp_safe, enforce_chi=True)
+            v.reroute(iid, lp_safe)
 
     alpha_eff = (n_policy + n_fn) / n_intents
     hop2 = 0
@@ -250,8 +252,7 @@ def knife_edge_modes(n: int = 20) -> dict:
 
 def static_eta_compare() -> dict:
     """Fixed η cap vs race-coupled interior / p_switch under two π_L regimes."""
-    eta = 1.5
-    C, r, ell, gamma, kappa = 1_000_000.0, 0.012, 0.25, 0.004, 0.01
+    eta, r, ell, gamma = (PRICING_PARAMETERS[key] for key in ("eta", "r", "ell", "gamma"))
     rows = {}
     for pi_L in (0.30, 0.70):
         rc = race_coupled(0.0225, pi_L)
